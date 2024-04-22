@@ -1,0 +1,80 @@
+MainConfig:
+        tread_size: 16
+        GPTmodel: "gpt-3.5-turbo-0125"
+        device : "cuda"
+        gpt_Dubug_mode: False
+        clip_Dubug_mode: False
+        sql_debug_mode: False
+        blip_Dubug_mode: True
+        make_ppt: True
+sql_config:
+        host: 'localhost'
+        user: 'root'
+        port:  3306
+        password: 'nycuml912'
+        database_name: "Innolux_Paper_info"
+        charset: 'utf8mb4'
+        table_name: ['Papers_info',Image_Files,"GPT_Cost","news_info"]
+Papers_info:
+        id : "INT AUTO_INCREMENT PRIMARY KEY"
+        title_name: "TEXT"
+        author_name: "TEXT"
+        organization_name: "TEXT"
+        Paper_name: "VARCHAR(255)"
+        Project_name: "VARCHAR(255)"
+        keypoints: "TEXT"
+        keywords: "TEXT"
+        Image_id: "json"
+        Logit_per_image: "json"
+        image_Description: "json"
+        Represent_image: "json"
+        prompt_tokens: "INT DEFAULT 0"
+        complete_tokens: "INT DEFAULT 0"
+        pdf_file_byte: "LONGBLOB"
+        Finish_time: "DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+        Status: "INT DEFAULT 0"
+news_info:
+        id : "INT AUTO_INCREMENT PRIMARY KEY"
+        title_name: "TEXT"
+        author_name: "TEXT"
+        organization_name: "TEXT"
+        Paper_name: "VARCHAR(255)"
+        Project_name: "VARCHAR(255)"
+        keypoints: "TEXT"
+        keywords: "TEXT"
+        Image_id: "json"
+        Logit_per_image: "json"
+        image_Description: "json"
+        Represent_image: "json"
+        prompt_tokens: "INT DEFAULT 0"
+        complete_tokens: "INT DEFAULT 0"
+        pdf_file_byte: "LONGBLOB"
+        Finish_time: "DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+        Status: "INT DEFAULT 0"
+
+
+GPT_Cost:
+        id : "INT AUTO_INCREMENT PRIMARY KEY"
+        Project_name: "VARCHAR(255)"
+        GPT_Cost_usd: "FLOAT DEFAULT 0.0"
+        Finish_time: "DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+        Status: "INT DEFAULT 0"
+
+Image_Files:
+        id : "INT AUTO_INCREMENT PRIMARY KEY"
+        Paper_name: "VARCHAR(255)"
+        Project_name: "VARCHAR(255)"
+        Image_id: "VARCHAR(255)"
+        Image_Byte_File: "LONGBLOB"
+        Finish_time: "DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+GPT_Prompt:
+        author_ques: "This is a paper, Please summerize three information: 'title_name' ,'author_name','organization_name' in json : High-Resolution Active-Matrix Micro-LED Stretchable Displays Haeyoon Jung*, Chan Il Park, Moon Bae Gee, Jaekyung Choi, YuRa Jeong SungJoon Min, JunHyuk Song, MyungSub Lim, Myungsung Kim, Taehyun Kim, Sujin Ham, Hyokang Lee, Heewon Kim, InTae Jeong, Gi-Hong Kim, Joon-Young Yang, and Sooyoung Yoon LG Display Co., Ltd, LG Science Park, Seoul, Korea"
+        author_ans: {'title_name': ['High-Resolution Active-Matrix Micro-LED Stretchable Displays'], 'author_name': ["Haeyoon Jung, Chan Il Park, Moon Bae Gee, Jaekyung Choi, YuRa Jeong SungJoon Min, JunHyuk Song, MyungSub Lim, Myungsung Kim, Taehyun Kim, Sujin Ham, Hyokang Lee, Heewon Kim, InTae Jeong, Gi-Hong Kim, Joon-Young Yang , Sooyoung Yoon"], 'organization_name': ["LG Display Co., Ltd, LG Science Park, Seoul, Korea"]}
+        author_prompt: "This is a paper, Please summerize three information 'title_name' ,'author_name' ,'organization_name' in json, \n"
+        auth_sys_prompt : "You are a Paper Summarizer designed to output JSON."
+        summaery_ques: "Summerize the article below into five keypoints and three keywords in json : Abstract We have developed 12-inch 100 PPI active-matrix micro- LED stretchable displays that can be stretched up to 20%. Our work has involved the development of key technologies such as stretchable interconnect, stretchable film, micro-LED, and the integration process for these components. The stretchable displays exhibited various types of deformations, suggesting the potential for new applications in information display. "
+        summaery_ans: {"keypoints":["Development of 12-inch 100 PPI active-matrix micro-LED stretchable displays","Achievement of up to 20% stretchability in the displays",],"keywords":["micro-LED","stretchable displays","stretchable technology"]}
+        content_prompt: "Summerize the article below into five 'keypoints' and five 'keywords'in json ,\n"
+        content_Split_prompt: 'Summerize the article below : \n'
+        content_sys_prompt: "You are a Paper Summarizer designed to output JSON."
+
