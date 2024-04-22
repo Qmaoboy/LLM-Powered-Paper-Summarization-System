@@ -4,8 +4,8 @@ import os
 from dbutils.pooled_db import PooledDB
 from ppt_maker import *
 import shared_logger
-
-logger = shared_logger.setup_logger('log/backend.log')
+import datetime
+logger = shared_logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
 
 class mysql_db_client:
     def __init__(self,args) -> None:
@@ -239,13 +239,14 @@ class sql_operater:
 
     def Search_by_keyword(self):
         Pdf_ppt_path=input("Where to save the ppt file? ")
+        Pdf_ppt_path=os.getcwd() if Pdf_ppt_path=="" else Pdf_ppt_path
         keyword=input("What is the keyword? ")
         result=self.client.find_data_by_keyword("Papers_info","keywords",keyword)
         if result:
             logger.info(f"found {len(result)} results")
             Paper_list=[i["Paper_name"] for i in result]
             if os.path.exists(Pdf_ppt_path):
-                make_ppt(Pdf_ppt_path,Paper_list,self.client,config)
+                make_ppt(Pdf_ppt_path,Paper_list,self.client,self.config)
         else:
             logger.debug(f"{keyword} not found in Mysql Papers_info Table")
 
@@ -274,9 +275,9 @@ if __name__=="__main__":
     # for i in result:
     #     print(i['keywords'])
     # # # print(len(result))
-    # result=client.find_data_by_keyword("Image_Files","Paper_name","3DSAp1_10L")
-    # for i in result:
-    #     print(i['Image_id'])
+    result=client.find_data_by_keyword("Image_Files","Paper_name","3DSAp1_10L")
+    for i in result:
+        print(i['Image_id'])
     # print(client.insert_data("GPT_Cost","Project_name",{"Project_name":"test","GPT_Cost_usd":0.0001}))
 
     # print(client.find_data("GPT_Cost","Project_name","test"))

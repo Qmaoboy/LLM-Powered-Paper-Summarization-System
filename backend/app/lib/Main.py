@@ -10,8 +10,8 @@ import argparse
 from gpt_worker import GPT_Analysis_
 from mysql_class import sql_operater
 import shared_logger
-
-logger = shared_logger.setup_logger('log/backend.log')
+import datetime
+logger = shared_logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
 
 
 with open('backend/app/lib/config/config.yaml', 'r') as yamlfile:

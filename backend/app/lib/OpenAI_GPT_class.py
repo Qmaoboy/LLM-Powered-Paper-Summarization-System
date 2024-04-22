@@ -1,8 +1,8 @@
 from openai import OpenAI
 import openai,time,os,threading as th,json
 import shared_logger
-
-logger = shared_logger.setup_logger('log/backend.log')
+import datetime
+logger = shared_logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
 
 class openai_GPT:
     def __init__(self,model="gpt-3.5-turbo-0125"):

@@ -2,6 +2,10 @@ import pynvml
 import torch,re,os,fitz,gc,threading as th
 from io import BytesIO
 from PIL import Image
+import shared_logger
+import datetime
+logger = shared_logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
+
 
 def Empty_GPU_Cache():
     gc.collect()
@@ -13,7 +17,7 @@ def CheckGPU():
     cudaa = torch.cuda.memory_allocated(0)
     hadle=pynvml.nvmlDeviceGetHandleByIndex(0)
     meminfo=pynvml.nvmlDeviceGetMemoryInfo(hadle)
-    print(f"The GPU : 0 Total Have :{meminfo.total/(1024**3):.2f} gb , Used : {meminfo.used/(1024**3):.2f} gb , Free : {meminfo.free/(1024**3):.2f} gb")
+    logger.info(f"The GPU : 0 Total Have :{meminfo.total/(1024**3):.2f} gb , Used : {meminfo.used/(1024**3):.2f} gb , Free : {meminfo.free/(1024**3):.2f} gb")
     return meminfo
 
 def Concate_list_dic(Target_object,split=", "):
@@ -61,7 +65,7 @@ def set_Target_list():
             iter =int(input("How many Path do u want to Process ? "))
             break
         except:
-            print("Please input number")
+            logger.info("Please input number")
     while(iter>0):
         path=input(f"Please input the {k}th Target Folder Direct Path : ").strip().replace('"',"")
         if os.path.exists(path):
@@ -69,7 +73,7 @@ def set_Target_list():
             iter-=1
             k+=1
         else:
-            print(f"{path} not exists")
+            logger.info(f"{path} not exists")
     return Target_list
 
 def decompose_text(text):
@@ -100,7 +104,7 @@ def pdf_reader(pdf_path,pub_num,pdf_filename,client,gpt_Dubug_mode):
         image_id=[]
         img_list_total=set()
         if gpt_Dubug_mode:
-            print(f"{th.current_thread().name}_{pub_num}_{len(range(doc.page_count))} Pages\n",end="")
+            logger.info(f"{th.current_thread().name}_{pub_num}_{len(range(doc.page_count))} Pages\n")
         for pg in range(len(doc)):
             page=doc.load_page(pg)
             text+=page.get_text()
@@ -109,7 +113,7 @@ def pdf_reader(pdf_path,pub_num,pdf_filename,client,gpt_Dubug_mode):
         count=1
         if img_list_total:
             if gpt_Dubug_mode:
-                print(f"{th.current_thread().name}_{pub_num}_Total_{len(img_list_total)}_images\n",end="")
+                logger.info(f"{th.current_thread().name}_{pub_num}_Total_{len(img_list_total)}_images\n")
             # print(img)
             for img_info in img_list_total:
                     # image_save_path_file=os.path.join(image_pb_path,f"img_{count}.png")
@@ -134,7 +138,7 @@ def pdf_reader(pdf_path,pub_num,pdf_filename,client,gpt_Dubug_mode):
                     count+=1
 
         if gpt_Dubug_mode:
-            print(f"{th.current_thread().name}_{pub_num} Image {count} Done")
+            logger.info(f"{th.current_thread().name}_{pub_num} Image {count} Done")
         doc.close()
 
         return text,toc,image_id

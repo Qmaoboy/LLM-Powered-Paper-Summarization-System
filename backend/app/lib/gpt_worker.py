@@ -8,8 +8,8 @@ from CLIP_Image_text_Similarty import Func_clip_
 import json,time,glob
 from queue import Queue
 import shared_logger
-
-logger = shared_logger.setup_logger('log/backend.log')
+import datetime
+logger = shared_logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
 
 BLIPprocessor=None
 BLIPmodel=None
@@ -34,7 +34,7 @@ class gpt_Worker(th.Thread):
         self.clip_Dubug_mode=self.args['MainConfig']['clip_Dubug_mode']
         self.Paper_gpt=openai_GPT(self.GPTmodel)
         self.client=mysql_db_client(self.args)
-        self.regen_times=10
+        self.regen_times=1
         self.reply_dic={}
         self.task="paper"
 
@@ -46,9 +46,6 @@ class gpt_Worker(th.Thread):
         else:
             if isinstance(target_dic[col_name][0],dict):
                 val_list=[]
-                if self.gpt_Dubug_mode:
-                    print(type(target_dic[col_name]))
-                    print(target_dic[col_name])
                 for i in target_dic[col_name]:
                     val_list+=i.values()
                 val=val_list
@@ -58,7 +55,8 @@ class gpt_Worker(th.Thread):
 
     def Get_openai_GPT(self,pb,pdf_filename):
         content_dic={}
-        # try:
+        if self.gpt_Dubug_mode:
+            logger.info(f"{th.current_thread().name} perform {self.task} Summerization on {pb}")
         if self.task=="paper":
             text,toc,image_id=pdf_reader(self.pdf_path,pb,pdf_filename,self.client,self.gpt_Dubug_mode)
             text_split_for_gpt,prefix=decompose_text(text)
@@ -73,7 +71,7 @@ class gpt_Worker(th.Thread):
                 titi_dic=json.loads(authreply)
                 break
             except:
-                logger.debug(f"{th.current_thread().name} {pb} json Load Fail {i}")
+                logger.debug(f"{th.current_thread().name} {pb} json Load Fail {i} ")
                 continue
         reply=''
         for i in range(len(text_split_for_gpt)):
@@ -127,6 +125,8 @@ class gpt_Worker(th.Thread):
 
 
     def run(self):
+        if self.gpt_Dubug_mode:
+            logger.info(f"{th.current_thread().name} Start GPT Generateion")
         while True:
             self.in_lock.acquire()
             if self.q_in.qsize()>0:
@@ -140,7 +140,7 @@ class gpt_Worker(th.Thread):
                 # print(document)
                 if document and not self.gpt_Dubug_mode:
                     reply_dic=document.pop()
-                    logger.info(f"{th.current_thread().name} Done !!! Exist in DB: {pb},usage {self.Paper_gpt.prompt_tokens+self.Paper_gpt.complete_tokens} tokens, Progress: {self.q_in.qsize()}\{self.job_all}\n",end="")
+                    logger.info(f"{th.current_thread().name} Done !!! Exist in DB: {pb},usage {self.Paper_gpt.prompt_tokens+self.Paper_gpt.complete_tokens} tokens, Progress: {self.q_in.qsize()}\{self.job_all}\n")
                 else:
                     ################################ GPT REquest
                     if not self.gpt_Dubug_mode:
@@ -148,7 +148,7 @@ class gpt_Worker(th.Thread):
                             try:
                                 self.Get_openai_GPT(pb,pdf_filename)
                             except:
-                                logger.debug(f"{th.current_thread().name} {pb} Format Wrong {cc}, Try to regenerate\n",end="")
+                                logger.debug(f"{th.current_thread().name} {pb} Format Wrong {cc}, Try to regenerate\n")
                                 continue
                     else:
                         self.Get_openai_GPT(pb,pdf_filename)
@@ -162,12 +162,14 @@ class gpt_Worker(th.Thread):
                 self.q_out_spent.put(self.Paper_gpt.complete_tokens)
 
                 self.out_lock.release()
-
-
+                if self.gpt_Dubug_mode:
+                    logger.info(f"{th.current_thread().name} Finish GPT Generateion on {pb}")
                 ## CLIP
                 Func_clip_([pb],self.args)
+                if self.gpt_Dubug_mode:
+                    logger.info(f"{th.current_thread().name} Finish CLIP Generateion on {pb}")
 
-                logger.info(f"{th.current_thread().name} Done !!! Insert to DB: {pb},usage {self.Paper_gpt.prompt_tokens+self.Paper_gpt.complete_tokens} tokens, Progress: {self.q_in.qsize()}\{self.job_all}\n",end="")
+                logger.info(f"{th.current_thread().name} Insert to DB: {pb},usage {self.Paper_gpt.prompt_tokens+self.Paper_gpt.complete_tokens} tokens, Progress: {self.q_in.qsize()}\{self.job_all}\n")
             else:
                 # print(f"{th.current_thread().name} Sleeping {q_in.qsize()}")
                 self.client.mysql_close()
@@ -206,7 +208,7 @@ def GPT_Analysis_(config,target_list:list)->None:
             raise ValueError("There is no file in path!!")
 
         terminal.set()
-        logger.info(f"{Target_Folder } Put job : {len(pub_num)}, Thread num: {config['MainConfig']['tread_size']}")
+        logger.info(f"{Target_Folder} Put job : {len(pub_num)}, Thread num: {config['MainConfig']['tread_size']}")
         for i in range(len(pub_num)):
             out_lock.acquire()
             while out_.qsize()==0:

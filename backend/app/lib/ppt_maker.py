@@ -2,7 +2,7 @@ from pptx import Presentation
 from pptx.util import Inches,Pt
 from pptx.enum.text import PP_ALIGN,MSO_ANCHOR, MSO_AUTO_SIZE
 from pptx.dml.color import RGBColor
-from datetime import datetime
+import datetime
 import re,os
 from utilized import *
 from PIL import Image
@@ -155,8 +155,8 @@ def make_ppt(Target_Folder,Paper_list,client,args):
                         fonti.size = Pt(11)    # 大小
                 else:
                     print(f"{img_name} Not Found in Mysql Image_Files Table")
-    now = datetime.now()
-    now_time = now.strftime("%Y_%m_%d_%H_%M")
+
+    now_time=datetime.datetime.now().strftime("%Y-%m-%d_%H")
     target_file=f"{ppt_path}\Innolux_paper_{papertitle}_{now_time}.pptx"
     X.save(target_file)
 
