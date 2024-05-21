@@ -21,16 +21,16 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit():
     function = request.form['function']
-    textinput = request.form['textinput']
+    folder_path = request.form['folder_path']
+    keyword = [request.form['keyword1'],request.form['keyword2']]
     if function == 'summarize':
-        # Here you would call a summarization function on textinput
-        # summary = "This is where the summary would appear."
-        return f"Input Text: {textinput} , Sorry the function is not implemented yet."
+        return f"Input Text: {folder_path} {keyword}, Sorry the function is not implemented yet."
     elif function == 'analyze':
-        return "Function not implemented."
+        return f"Input Text: {folder_path} {keyword}, Sorry the function is not implemented yet."
     elif function == 'review':
-        return "Function not implemented."
-
+        return f"Input Text: {folder_path} {keyword}, Sorry the function is not implemented yet."
+    else:
+        return 'Invalid function'
 if __name__ == "__main__":
     # Setting host to '0.0.0.0' allows the server to be accessible externally
     # Port 5000 is the default for Flask, explicitly stated here for clarity
