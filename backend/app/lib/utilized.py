@@ -2,9 +2,9 @@ import pynvml
 import torch,re,os,fitz,gc,threading as th
 from io import BytesIO
 from PIL import Image
-import shared_logger
+import lib.logger as logger
 import datetime
-logger = shared_logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
+logger = logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
 
 
 def Empty_GPU_Cache():

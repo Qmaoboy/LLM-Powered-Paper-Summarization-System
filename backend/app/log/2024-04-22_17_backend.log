@@ -1,0 +1,445 @@
+2024-04-22 17:42:58,118 - shared_logger - INFO - Starting GPT_gen task...
+2024-04-22 17:43:37,694 - shared_logger - INFO - Starting GPT_gen task...
+2024-04-22 17:43:45,226 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D2_3DSA2_1,usage 25 tokens, Progress: 462\463
+
+2024-04-22 17:43:45,274 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_1,usage 25 tokens, Progress: 462\463
+
+2024-04-22 17:43:45,305 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D2_3DSA2_2,usage 25 tokens, Progress: 461\463
+
+2024-04-22 17:43:45,353 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_2,usage 25 tokens, Progress: 461\463
+
+2024-04-22 17:43:45,387 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D2_3DSA2_3,usage 25 tokens, Progress: 460\463
+
+2024-04-22 17:43:45,458 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_3,usage 25 tokens, Progress: 460\463
+
+2024-04-22 17:43:45,494 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D2_3DSA2_4,usage 25 tokens, Progress: 459\463
+
+2024-04-22 17:43:45,572 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_4,usage 25 tokens, Progress: 459\463
+
+2024-04-22 17:43:45,608 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D4_3DSA4_1,usage 25 tokens, Progress: 458\463
+
+2024-04-22 17:43:45,681 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D4_3DSA4_2,usage 25 tokens, Progress: 457\463
+
+2024-04-22 17:43:45,681 - shared_logger - INFO - Thread-1 Insert to DB: 3D4_3DSA4_1,usage 25 tokens, Progress: 457\463
+
+2024-04-22 17:43:45,723 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D4_3DSA4_3,usage 25 tokens, Progress: 456\463
+
+2024-04-22 17:43:45,724 - shared_logger - INFO - Thread-2 Insert to DB: 3D4_3DSA4_2,usage 25 tokens, Progress: 456\463
+
+2024-04-22 17:43:45,765 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D4_3DSA4_4,usage 25 tokens, Progress: 455\463
+
+2024-04-22 17:43:45,765 - shared_logger - INFO - Thread-1 Insert to DB: 3D4_3DSA4_3,usage 25 tokens, Progress: 455\463
+
+2024-04-22 17:43:45,807 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D6_3DSA6_1,usage 25 tokens, Progress: 454\463
+
+2024-04-22 17:43:45,807 - shared_logger - INFO - Thread-2 Insert to DB: 3D4_3DSA4_4,usage 25 tokens, Progress: 454\463
+
+2024-04-22 17:43:45,846 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D6_3DSA6_2,usage 25 tokens, Progress: 453\463
+
+2024-04-22 17:43:45,848 - shared_logger - INFO - Thread-1 Insert to DB: 3D6_3DSA6_1,usage 25 tokens, Progress: 453\463
+
+2024-04-22 17:43:45,882 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D6_3DSA6_3,usage 25 tokens, Progress: 452\463
+
+2024-04-22 17:43:45,883 - shared_logger - INFO - Thread-2 Insert to DB: 3D6_3DSA6_2,usage 25 tokens, Progress: 452\463
+
+2024-04-22 17:43:45,921 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D6_3DSA6_4,usage 25 tokens, Progress: 451\463
+
+2024-04-22 17:43:45,922 - shared_logger - INFO - Thread-1 Insert to DB: 3D6_3DSA6_3,usage 25 tokens, Progress: 451\463
+
+2024-04-22 17:43:45,964 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D8_3DSA8_1,usage 25 tokens, Progress: 450\463
+
+2024-04-22 17:43:45,966 - shared_logger - INFO - Thread-2 Insert to DB: 3D6_3DSA6_4,usage 25 tokens, Progress: 450\463
+
+2024-04-22 17:43:46,001 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D8_3DSA8_2,usage 25 tokens, Progress: 449\463
+
+2024-04-22 17:43:46,002 - shared_logger - INFO - Thread-1 Insert to DB: 3D8_3DSA8_1,usage 25 tokens, Progress: 449\463
+
+2024-04-22 17:43:46,037 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D8_3DSA8_3,usage 25 tokens, Progress: 448\463
+
+2024-04-22 17:43:46,039 - shared_logger - INFO - Thread-2 Insert to DB: 3D8_3DSA8_2,usage 25 tokens, Progress: 448\463
+
+2024-04-22 17:43:46,078 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D8_3DSA8_4,usage 25 tokens, Progress: 447\463
+
+2024-04-22 17:43:46,080 - shared_logger - INFO - Thread-1 Insert to DB: 3D8_3DSA8_3,usage 25 tokens, Progress: 447\463
+
+2024-04-22 17:43:46,121 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3Dp1_1,usage 25 tokens, Progress: 446\463
+
+2024-04-22 17:43:46,122 - shared_logger - INFO - Thread-2 Insert to DB: 3D8_3DSA8_4,usage 25 tokens, Progress: 446\463
+
+2024-04-22 17:43:46,186 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_3,usage 25 tokens, Progress: 444\463
+
+2024-04-22 17:43:46,188 - shared_logger - INFO - Thread-1 Insert to DB: 3Dp1_1,usage 25 tokens, Progress: 444\463
+
+2024-04-22 17:43:46,199 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3Dp1_2,usage 25 tokens, Progress: 443\463
+
+2024-04-22 17:43:46,240 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3Dp1_4L,usage 25 tokens, Progress: 443\463
+
+2024-04-22 17:43:46,242 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_3,usage 25 tokens, Progress: 443\463
+
+2024-04-22 17:43:46,278 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_5L,usage 25 tokens, Progress: 442\463
+
+2024-04-22 17:43:46,297 - shared_logger - INFO - Thread-2 Insert to DB: 3Dp1_2,usage 25 tokens, Progress: 442\463
+
+2024-04-22 17:43:46,310 - shared_logger - INFO - Thread-1 Insert to DB: 3Dp1_4L,usage 25 tokens, Progress: 441\463
+
+2024-04-22 17:43:46,344 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_5L,usage 25 tokens, Progress: 440\463
+
+2024-04-22 17:43:46,361 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3Dp1_6L,usage 25 tokens, Progress: 439\463
+
+2024-04-22 17:43:46,365 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3Dp1_7L,usage 25 tokens, Progress: 439\463
+
+2024-04-22 17:43:46,389 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_8L,usage 25 tokens, Progress: 439\463
+
+2024-04-22 17:43:46,445 - shared_logger - INFO - Thread-1 Insert to DB: 3Dp1_7L,usage 25 tokens, Progress: 439\463
+
+2024-04-22 17:43:46,447 - shared_logger - INFO - Thread-2 Insert to DB: 3Dp1_6L,usage 25 tokens, Progress: 439\463
+
+2024-04-22 17:43:46,469 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_8L,usage 25 tokens, Progress: 437\463
+
+2024-04-22 17:43:46,491 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSA1_3D1_2,usage 25 tokens, Progress: 436\463
+
+2024-04-22 17:43:46,494 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSA1_3D1_1,usage 25 tokens, Progress: 436\463
+
+2024-04-22 17:43:46,508 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSA1_3D1_3,usage 25 tokens, Progress: 436\463
+
+2024-04-22 17:43:46,560 - shared_logger - INFO - Thread-2 Insert to DB: 3DSA1_3D1_2,usage 25 tokens, Progress: 436\463
+
+2024-04-22 17:43:46,560 - shared_logger - INFO - Thread-3 Insert to DB: 3DSA1_3D1_3,usage 25 tokens, Progress: 436\463
+
+2024-04-22 17:43:46,561 - shared_logger - INFO - Thread-1 Insert to DB: 3DSA1_3D1_1,usage 25 tokens, Progress: 435\463
+
+2024-04-22 17:43:46,596 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSA3_3D3_1,usage 25 tokens, Progress: 433\463
+
+2024-04-22 17:43:46,596 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSA1_3D1_4,usage 25 tokens, Progress: 433\463
+
+2024-04-22 17:43:46,596 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSA3_3D3_2,usage 25 tokens, Progress: 433\463
+
+2024-04-22 17:43:46,667 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSA3_3D3_3,usage 25 tokens, Progress: 432\463
+
+2024-04-22 17:43:46,670 - shared_logger - INFO - Thread-2 Insert to DB: 3DSA1_3D1_4,usage 25 tokens, Progress: 432\463
+
+2024-04-22 17:43:46,671 - shared_logger - INFO - Thread-3 Insert to DB: 3DSA3_3D3_1,usage 25 tokens, Progress: 432\463
+
+2024-04-22 17:43:46,673 - shared_logger - INFO - Thread-1 Insert to DB: 3DSA3_3D3_2,usage 25 tokens, Progress: 430\463
+
+2024-04-22 17:43:46,716 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSA5_3D5_1,usage 25 tokens, Progress: 429\463
+
+2024-04-22 17:43:46,717 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSA5_3D5_2,usage 25 tokens, Progress: 429\463
+
+2024-04-22 17:43:46,717 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSA5_3D5_3,usage 25 tokens, Progress: 429\463
+
+2024-04-22 17:43:46,717 - shared_logger - INFO - Thread-4 Insert to DB: 3DSA3_3D3_3,usage 25 tokens, Progress: 429\463
+
+2024-04-22 17:43:46,763 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSA5_3D5_4,usage 25 tokens, Progress: 428\463
+
+2024-04-22 17:43:46,765 - shared_logger - INFO - Thread-2 Insert to DB: 3DSA5_3D5_1,usage 25 tokens, Progress: 428\463
+
+2024-04-22 17:43:46,766 - shared_logger - INFO - Thread-3 Insert to DB: 3DSA5_3D5_2,usage 25 tokens, Progress: 427\463
+
+2024-04-22 17:43:46,804 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSA7_3D7_1,usage 25 tokens, Progress: 426\463
+
+2024-04-22 17:43:46,804 - shared_logger - INFO - Thread-1 Insert to DB: 3DSA5_3D5_3,usage 25 tokens, Progress: 426\463
+
+2024-04-22 17:43:46,823 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSA7_3D7_2,usage 25 tokens, Progress: 425\463
+
+2024-04-22 17:43:46,834 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSA7_3D7_3,usage 25 tokens, Progress: 425\463
+
+2024-04-22 17:43:46,836 - shared_logger - INFO - Thread-4 Insert to DB: 3DSA5_3D5_4,usage 25 tokens, Progress: 425\463
+
+2024-04-22 17:43:46,888 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSA7_3D7_4,usage 25 tokens, Progress: 424\463
+
+2024-04-22 17:43:46,889 - shared_logger - INFO - Thread-2 Insert to DB: 3DSA7_3D7_1,usage 25 tokens, Progress: 424\463
+
+2024-04-22 17:43:46,898 - shared_logger - INFO - Thread-3 Insert to DB: 3DSA7_3D7_2,usage 25 tokens, Progress: 423\463
+
+2024-04-22 17:43:46,907 - shared_logger - INFO - Thread-1 Insert to DB: 3DSA7_3D7_3,usage 25 tokens, Progress: 422\463
+
+2024-04-22 17:43:46,938 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSAp1_1,usage 25 tokens, Progress: 421\463
+
+2024-04-22 17:43:46,938 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSAp1_11L,usage 25 tokens, Progress: 421\463
+
+2024-04-22 17:43:46,938 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSAp1_10L,usage 25 tokens, Progress: 421\463
+
+2024-04-22 17:43:46,947 - shared_logger - INFO - Thread-4 Insert to DB: 3DSA7_3D7_4,usage 25 tokens, Progress: 421\463
+
+2024-04-22 17:43:46,999 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSAp1_12L,usage 25 tokens, Progress: 420\463
+
+2024-04-22 17:43:47,000 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp1_1,usage 25 tokens, Progress: 420\463
+
+2024-04-22 17:43:47,001 - shared_logger - INFO - Thread-1 Insert to DB: 3DSAp1_11L,usage 25 tokens, Progress: 419\463
+
+2024-04-22 17:43:47,002 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp1_10L,usage 25 tokens, Progress: 419\463
+
+2024-04-22 17:43:47,042 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSAp1_13L,usage 25 tokens, Progress: 417\463
+
+2024-04-22 17:43:47,042 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSAp1_15L,usage 25 tokens, Progress: 417\463
+
+2024-04-22 17:43:47,043 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSAp1_14L,usage 25 tokens, Progress: 417\463
+
+2024-04-22 17:43:47,045 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp1_12L,usage 25 tokens, Progress: 417\463
+
+2024-04-22 17:43:47,084 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSAp1_16L,usage 25 tokens, Progress: 416\463
+
+2024-04-22 17:43:47,085 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp1_15L,usage 25 tokens, Progress: 416\463
+
+2024-04-22 17:43:47,120 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSAp1_2,usage 25 tokens, Progress: 415\463
+
+2024-04-22 17:43:47,122 - shared_logger - INFO - Thread-1 Insert to DB: 3DSAp1_14L,usage 25 tokens, Progress: 415\463
+
+2024-04-22 17:43:47,122 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp1_13L,usage 25 tokens, Progress: 415\463
+
+2024-04-22 17:43:47,160 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSAp1_3,usage 25 tokens, Progress: 412\463
+
+2024-04-22 17:43:47,161 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSAp1_4,usage 25 tokens, Progress: 412\463
+
+2024-04-22 17:43:47,162 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp1_16L,usage 25 tokens, Progress: 412\463
+
+2024-04-22 17:43:47,200 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSAp1_6,usage 25 tokens, Progress: 411\463
+
+2024-04-22 17:43:47,201 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp1_2,usage 25 tokens, Progress: 411\463
+
+2024-04-22 17:43:47,202 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: 3DSAp1_5,usage 25 tokens, Progress: 411\463
+
+2024-04-22 17:43:47,256 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSAp1_7,usage 25 tokens, Progress: 410\463
+
+2024-04-22 17:43:47,260 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp1_4,usage 25 tokens, Progress: 410\463
+
+2024-04-22 17:43:47,262 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp1_6,usage 25 tokens, Progress: 409\463
+
+2024-04-22 17:43:47,264 - shared_logger - INFO - Thread-1 Insert to DB: 3DSAp1_3,usage 25 tokens, Progress: 408\463
+
+2024-04-22 17:43:47,276 - shared_logger - INFO - Thread-5 Insert to DB: 3DSAp1_5,usage 25 tokens, Progress: 407\463
+
+2024-04-22 17:43:47,319 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: 3DSAp2_10L,usage 25 tokens, Progress: 406\463
+
+2024-04-22 17:43:47,319 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSAp1_9,usage 25 tokens, Progress: 406\463
+
+2024-04-22 17:43:47,319 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSAp1_8,usage 25 tokens, Progress: 406\463
+
+2024-04-22 17:43:47,320 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSAp2_1,usage 25 tokens, Progress: 406\463
+
+2024-04-22 17:43:47,381 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp1_7,usage 25 tokens, Progress: 406\463
+
+2024-04-22 17:43:47,388 - shared_logger - INFO - Thread-5 Insert to DB: 3DSAp2_10L,usage 25 tokens, Progress: 405\463
+
+2024-04-22 17:43:47,392 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp1_9,usage 25 tokens, Progress: 404\463
+
+2024-04-22 17:43:47,399 - shared_logger - INFO - Thread-1 Insert to DB: 3DSAp2_1,usage 25 tokens, Progress: 403\463
+
+2024-04-22 17:43:47,406 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp1_8,usage 25 tokens, Progress: 402\463
+
+2024-04-22 17:43:47,445 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSAp2_13L,usage 25 tokens, Progress: 401\463
+
+2024-04-22 17:43:47,445 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSAp2_15L,usage 25 tokens, Progress: 401\463
+
+2024-04-22 17:43:47,445 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSAp2_11L,usage 25 tokens, Progress: 401\463
+
+2024-04-22 17:43:47,446 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSAp2_14L,usage 25 tokens, Progress: 401\463
+
+2024-04-22 17:43:47,479 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: 3DSAp2_12L,usage 25 tokens, Progress: 401\463
+
+2024-04-22 17:43:47,514 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp2_11L,usage 25 tokens, Progress: 401\463
+
+2024-04-22 17:43:47,516 - shared_logger - INFO - Thread-1 Insert to DB: 3DSAp2_14L,usage 25 tokens, Progress: 400\463
+
+2024-04-22 17:43:47,516 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp2_15L,usage 25 tokens, Progress: 399\463
+
+2024-04-22 17:43:47,518 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp2_13L,usage 25 tokens, Progress: 399\463
+
+2024-04-22 17:43:47,556 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSAp2_17L,usage 25 tokens, Progress: 397\463
+
+2024-04-22 17:43:47,557 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSAp2_16L,usage 25 tokens, Progress: 397\463
+
+2024-04-22 17:43:47,558 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSAp2_19L,usage 25 tokens, Progress: 397\463
+
+2024-04-22 17:43:47,559 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSAp2_18L,usage 25 tokens, Progress: 397\463
+
+2024-04-22 17:43:47,595 - shared_logger - INFO - Thread-5 Insert to DB: 3DSAp2_12L,usage 25 tokens, Progress: 397\463
+
+2024-04-22 17:43:47,624 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: 3DSAp2_2,usage 25 tokens, Progress: 396\463
+
+2024-04-22 17:43:47,625 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp2_16L,usage 25 tokens, Progress: 396\463
+
+2024-04-22 17:43:47,625 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp2_18L,usage 25 tokens, Progress: 396\463
+
+2024-04-22 17:43:47,626 - shared_logger - INFO - Thread-1 Insert to DB: 3DSAp2_17L,usage 25 tokens, Progress: 396\463
+
+2024-04-22 17:43:47,627 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp2_19L,usage 25 tokens, Progress: 394\463
+
+2024-04-22 17:43:47,675 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSAp2_3,usage 25 tokens, Progress: 392\463
+
+2024-04-22 17:43:47,678 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3DSAp2_5,usage 25 tokens, Progress: 392\463
+
+2024-04-22 17:43:47,681 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3DSAp2_4,usage 25 tokens, Progress: 392\463
+
+2024-04-22 17:43:47,694 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSAp2_6,usage 25 tokens, Progress: 391\463
+
+2024-04-22 17:43:47,694 - shared_logger - INFO - Thread-5 Insert to DB: 3DSAp2_2,usage 25 tokens, Progress: 391\463
+
+2024-04-22 17:43:47,760 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: 3DSAp2_8,usage 25 tokens, Progress: 390\463
+
+2024-04-22 17:43:47,781 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp2_3,usage 25 tokens, Progress: 390\463
+
+2024-04-22 17:43:47,785 - shared_logger - INFO - Thread-6 Done !!! Exist in DB: 3DSAp2_7,usage 25 tokens, Progress: 389\463
+
+2024-04-22 17:43:47,790 - shared_logger - INFO - Thread-1 Insert to DB: 3DSAp2_5,usage 25 tokens, Progress: 389\463
+
+2024-04-22 17:43:47,842 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3DSAp2_9L,usage 25 tokens, Progress: 388\463
+
+2024-04-22 17:43:47,862 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: AMD1_1,usage 25 tokens, Progress: 388\463
+
+2024-04-22 17:43:47,864 - shared_logger - INFO - Thread-5 Insert to DB: 3DSAp2_8,usage 25 tokens, Progress: 388\463
+
+2024-04-22 17:43:47,865 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp2_4,usage 25 tokens, Progress: 388\463
+
+2024-04-22 17:43:47,877 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp2_6,usage 25 tokens, Progress: 386\463
+
+2024-04-22 17:43:47,920 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: AMD1_2,usage 25 tokens, Progress: 385\463
+
+2024-04-22 17:43:47,922 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: AMD1_4L,usage 25 tokens, Progress: 385\463
+
+2024-04-22 17:43:47,937 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp2_9L,usage 25 tokens, Progress: 385\463
+
+2024-04-22 17:43:47,944 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: AMD1_3,usage 25 tokens, Progress: 384\463
+
+2024-04-22 17:43:47,956 - shared_logger - INFO - Thread-6 Insert to DB: 3DSAp2_7,usage 25 tokens, Progress: 384\463
+
+2024-04-22 17:43:47,987 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: AMD2_1,usage 25 tokens, Progress: 383\463
+
+2024-04-22 17:43:48,017 - shared_logger - INFO - Thread-6 Done !!! Exist in DB: AMD2_2,usage 25 tokens, Progress: 383\463
+
+2024-04-22 17:43:48,037 - shared_logger - INFO - Thread-4 Insert to DB: AMD1_4L,usage 25 tokens, Progress: 383\463
+
+2024-04-22 17:43:48,040 - shared_logger - INFO - Thread-5 Insert to DB: AMD1_2,usage 25 tokens, Progress: 382\463
+
+2024-04-22 17:43:48,052 - shared_logger - INFO - Thread-2 Insert to DB: AMD1_3,usage 25 tokens, Progress: 381\463
+
+2024-04-22 17:43:48,097 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: AMD2_4L,usage 25 tokens, Progress: 380\463
+
+2024-04-22 17:43:48,099 - shared_logger - INFO - Thread-3 Insert to DB: AMD2_1,usage 25 tokens, Progress: 380\463
+
+2024-04-22 17:43:48,107 - shared_logger - INFO - Thread-6 Insert to DB: AMD2_2,usage 25 tokens, Progress: 379\463
+
+2024-04-22 17:43:48,110 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: AMD2_3,usage 25 tokens, Progress: 378\463
+
+2024-04-22 17:43:48,110 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: AMD3_1,usage 25 tokens, Progress: 378\463
+
+2024-04-22 17:43:48,179 - shared_logger - INFO - Thread-6 Done !!! Exist in DB: AMD3_3,usage 25 tokens, Progress: 377\463
+
+2024-04-22 17:43:48,192 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: AMD3_2,usage 25 tokens, Progress: 377\463
+
+2024-04-22 17:43:48,196 - shared_logger - INFO - Thread-7 Done !!! Exist in DB: AMD3_4,usage 25 tokens, Progress: 377\463
+
+2024-04-22 17:43:48,202 - shared_logger - INFO - Thread-5 Insert to DB: AMD2_4L,usage 25 tokens, Progress: 377\463
+
+2024-04-22 17:43:48,256 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: AMD4_1,usage 25 tokens, Progress: 376\463
+
+2024-04-22 17:43:48,628 - shared_logger - INFO - Thread-8 Done !!! Exist in DB: AMD4_2,usage 25 tokens, Progress: 375\463
+
+2024-04-22 17:43:50,929 - shared_logger - INFO - Thread-10 Done !!! Exist in DB: AMD4_4,usage 25 tokens, Progress: 373\463
+
+2024-04-22 17:43:59,737 - shared_logger - INFO - D:\Innolux\IDW_Papers Put job : 463, Thread num: 16
+2024-04-22 17:44:17,440 - shared_logger - INFO - Thread-7 Insert to DB: AMD3_4,usage 25 tokens, Progress: 367\463
+
+2024-04-22 17:44:17,795 - shared_logger - INFO - Thread-6 Insert to DB: AMD3_3,usage 25 tokens, Progress: 366\463
+
+2024-04-22 17:44:18,343 - shared_logger - INFO - Thread-4 Insert to DB: AMD2_3,usage 25 tokens, Progress: 365\463
+
+2024-04-22 17:44:18,613 - shared_logger - INFO - Thread-10 Insert to DB: AMD4_4,usage 25 tokens, Progress: 364\463
+
+2024-04-22 17:44:18,627 - shared_logger - INFO - Thread-5 Insert to DB: AMD4_1,usage 25 tokens, Progress: 363\463
+
+2024-04-22 17:44:20,716 - shared_logger - INFO - Thread-3 Insert to DB: AMD3_2,usage 25 tokens, Progress: 362\463
+
+2024-04-22 17:44:22,203 - shared_logger - INFO - Thread-2 Insert to DB: AMD3_1,usage 25 tokens, Progress: 361\463
+
+2024-04-22 17:44:23,054 - shared_logger - INFO - Thread-8 Insert to DB: AMD4_2,usage 25 tokens, Progress: 360\463
+
+2024-04-22 17:44:25,392 - shared_logger - INFO - Thread-9 Insert to DB: AMD4_3,usage 7402 tokens, Progress: 359\463
+
+2024-04-22 17:44:27,505 - shared_logger - INFO - Thread-1 Insert to DB: AMD1_1,usage 25 tokens, Progress: 358\463
+
+2024-04-22 17:44:29,624 - shared_logger - INFO - Thread-11 Insert to DB: AMD5_1,usage 6152 tokens, Progress: 357\463
+
+2024-04-22 17:44:32,164 - shared_logger - INFO - Thread-12 Insert to DB: AMD5_2,usage 6763 tokens, Progress: 356\463
+
+2024-04-22 17:44:36,361 - shared_logger - INFO - Thread-14 Insert to DB: AMD5_4L,usage 6983 tokens, Progress: 355\463
+
+2024-04-22 17:44:41,847 - shared_logger - INFO - Thread-15 Insert to DB: AMD6_1,usage 6161 tokens, Progress: 354\463
+
+2024-04-22 17:44:43,990 - shared_logger - INFO - Thread-16 Insert to DB: AMD6_2,usage 7582 tokens, Progress: 353\463
+
+2024-04-22 17:44:49,611 - shared_logger - INFO - Thread-4 Insert to DB: AMDp1_1,usage 3796 tokens, Progress: 352\463
+
+2024-04-22 17:44:50,209 - shared_logger - INFO - Thread-13 Insert to DB: AMD5_3,usage 7640 tokens, Progress: 351\463
+
+2024-04-22 17:44:56,483 - shared_logger - INFO - Thread-3 Insert to DB: AMDp1_12L,usage 4716 tokens, Progress: 350\463
+
+2024-04-22 17:45:01,541 - shared_logger - INFO - Thread-6 Insert to DB: AMD6_4L,usage 6615 tokens, Progress: 349\463
+
+2024-04-22 17:45:03,163 - shared_logger - INFO - Thread-5 Insert to DB: AMDp1_11L,usage 6080 tokens, Progress: 348\463
+
+2024-04-22 17:45:07,192 - shared_logger - INFO - Thread-8 Insert to DB: AMDp1_3,usage 4997 tokens, Progress: 347\463
+
+2024-04-22 17:45:16,012 - shared_logger - INFO - Thread-9 Insert to DB: AMDp1_4,usage 13472 tokens, Progress: 346\463
+
+2024-04-22 17:45:16,078 - shared_logger - INFO - Thread-2 Insert to DB: AMDp1_2,usage 7049 tokens, Progress: 345\463
+
+2024-04-22 17:45:16,382 - shared_logger - INFO - Thread-10 Insert to DB: AMDp1_10L,usage 7433 tokens, Progress: 344\463
+
+2024-04-22 17:45:17,138 - shared_logger - INFO - Thread-14 Insert to DB: AMDp1_8L,usage 11139 tokens, Progress: 343\463
+
+2024-04-22 17:45:21,083 - shared_logger - INFO - Thread-1 Insert to DB: AMDp1_5,usage 6422 tokens, Progress: 342\463
+
+2024-04-22 17:45:31,106 - shared_logger - INFO - Thread-11 Insert to DB: AMDp1_6,usage 12532 tokens, Progress: 341\463
+
+2024-04-22 17:45:33,988 - shared_logger - INFO - Thread-16 Insert to DB: AMDp2_1,usage 13876 tokens, Progress: 340\463
+
+2024-04-22 17:45:34,407 - shared_logger - INFO - Thread-4 Insert to DB: AMDp2_10L,usage 10605 tokens, Progress: 339\463
+
+2024-04-22 17:45:38,667 - shared_logger - INFO - Thread-13 Insert to DB: AMDp2_11L,usage 12920 tokens, Progress: 338\463
+
+2024-04-22 17:45:41,486 - shared_logger - INFO - Thread-15 Insert to DB: AMDp1_9L,usage 11329 tokens, Progress: 337\463
+
+2024-04-22 17:45:42,795 - shared_logger - INFO - Thread-12 Insert to DB: AMDp1_7,usage 14572 tokens, Progress: 336\463
+
+2024-04-22 17:45:45,517 - shared_logger - INFO - Thread-5 Insert to DB: AMDp2_4,usage 11265 tokens, Progress: 335\463
+
+2024-04-22 17:45:48,859 - shared_logger - INFO - Thread-3 Insert to DB: AMDp2_2,usage 11005 tokens, Progress: 334\463
+
+2024-04-22 17:45:53,902 - shared_logger - INFO - Thread-7 Insert to DB: AMD6_3,usage 8711 tokens, Progress: 333\463
+
+2024-04-22 17:45:56,579 - shared_logger - INFO - Thread-10 Insert to DB: AMDp2_8L,usage 11682 tokens, Progress: 332\463
+
+2024-04-22 17:45:56,857 - shared_logger - INFO - Thread-9 Insert to DB: AMDp2_6,usage 17527 tokens, Progress: 331\463
+
+2024-04-22 17:46:01,049 - shared_logger - INFO - Thread-2 Insert to DB: AMDp2_7,usage 11806 tokens, Progress: 330\463
+
+2024-04-22 17:46:03,218 - shared_logger - INFO - Thread-1 Insert to DB: DES1_1,usage 11314 tokens, Progress: 329\463
+
+2024-04-22 17:46:03,358 - shared_logger - INFO - Thread-14 Insert to DB: AMDp2_9L,usage 19180 tokens, Progress: 328\463
+
+2024-04-22 17:46:04,208 - shared_logger - INFO - Thread-8 Insert to DB: AMDp2_5,usage 11855 tokens, Progress: 327\463
+
+2024-04-22 17:46:07,019 - shared_logger - INFO - Thread-6 Insert to DB: AMDp2_3,usage 13481 tokens, Progress: 326\463
+
+2024-04-22 17:46:08,089 - shared_logger - INFO - Thread-11 Insert to DB: DES1_2,usage 17535 tokens, Progress: 325\463
+
+2024-04-22 17:46:15,937 - shared_logger - INFO - Thread-12 Insert to DB: DES2_3,usage 19944 tokens, Progress: 324\463
+
+2024-04-22 17:46:17,374 - shared_logger - INFO - Thread-3 Insert to DB: DES3_1,usage 14842 tokens, Progress: 323\463
+
+2024-04-22 17:46:20,400 - shared_logger - INFO - Thread-15 Insert to DB: DES2_2,usage 17000 tokens, Progress: 322\463
+
+2024-04-22 17:46:22,408 - shared_logger - INFO - Thread-13 Insert to DB: DES2_1,usage 20629 tokens, Progress: 321\463
+
+2024-04-22 17:46:27,554 - shared_logger - INFO - Thread-16 Insert to DB: DES1_3L,usage 21125 tokens, Progress: 320\463
+
+2024-04-22 17:46:39,037 - shared_logger - INFO - Starting sql_Action task...
+2024-04-22 17:46:45,026 - shared_logger - INFO - found 26 results
+2024-04-22 17:48:01,357 - shared_logger - INFO - Starting sql_Action task...
+2024-04-22 17:48:10,123 - shared_logger - INFO - found 26 results
+2024-04-22 17:49:30,365 - shared_logger - INFO - Starting sql_Action task...
+2024-04-22 17:49:34,212 - shared_logger - INFO - found 26 results
+2024-04-22 17:51:15,520 - shared_logger - INFO - Starting sql_Action task...
+2024-04-22 17:51:21,205 - shared_logger - INFO - found 26 results

@@ -1,15 +1,16 @@
 import threading as th
-from mysql_class import mysql_db_client
-from OpenAI_GPT_class import openai_GPT
-from utilized import *
-from ppt_maker import make_ppt
-from BLIP_image_Description import Func_blip_
-from CLIP_Image_text_Similarty import Func_clip_
+from lib.mysql_class import mysql_db_client
+from lib.OpenAI_GPT_class import openai_GPT
+from lib.utilized import *
+from lib.ppt_maker import make_ppt
+from lib.BLIP_image_Description import Func_blip_
+from lib.CLIP_Image_text_Similarty import Func_clip_
 import json,time,glob
 from queue import Queue
-import shared_logger
+import lib.logger as logger
 import datetime
-logger = shared_logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
+os.makedirs('log', exist_ok=True)
+logger = logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
 
 BLIPprocessor=None
 BLIPmodel=None
@@ -199,7 +200,7 @@ def GPT_Analysis_(config,target_list:list)->None:
             # in_lock.release()
         ## Parrallel Processing Thread Start
         if pub_num:
-            for i in range(config['MainConfig']['tread_size']):
+            for i in range(config['MainConfig']['thread_size']):
                 thread.append(gpt_Worker(Target_Folder,len(pub_num),in_,out_,in_spent_,outspent_,in_lock,out_lock,terminal,config))
                 thread[i].start()
 
@@ -208,7 +209,7 @@ def GPT_Analysis_(config,target_list:list)->None:
             raise ValueError("There is no file in path!!")
 
         terminal.set()
-        logger.info(f"{Target_Folder} Put job : {len(pub_num)}, Thread num: {config['MainConfig']['tread_size']}")
+        logger.info(f"{Target_Folder} Put job : {len(pub_num)}, Thread num: {config['MainConfig']['thread_size']}")
         for i in range(len(pub_num)):
             out_lock.acquire()
             while out_.qsize()==0:

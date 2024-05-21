@@ -1,0 +1,23 @@
+2024-04-23 13:02:12,895 - shared_logger - ERROR - MainThread check API Key Check Fail, Please Check your API Key
+ respoone : <class 'openai.AuthenticationError'>
+2024-04-23 13:02:46,613 - shared_logger - ERROR - MainThread check API Key Check Fail, Please Check your API Key respoone : <class 'openai.AuthenticationError'>
+2024-04-23 13:03:33,917 - shared_logger - ERROR - MainThread check API Key Check Fail, Please Check your API Key respoone : None
+2024-04-23 13:05:12,770 - shared_logger - ERROR - MainThread check API Key Check Fail, Please Check your API Key respoone : 401
+2024-04-23 13:06:58,203 - shared_logger - ERROR - MainThread check API Key Check Fail, Please Check your API Key respoone : 401Error code: 401 - {'error': {'message': 'Incorrect API key provided: 123. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-04-23 13:07:14,942 - shared_logger - ERROR - MainThread check API Key Check Fail, Please Check your API Key respoone : 401
+2024-04-23 13:07:24,761 - shared_logger - ERROR - MainThread check API Key Check Fail, Please Check your API Key respoone : 401
+2024-04-23 13:07:48,801 - shared_logger - ERROR - MainThread check API Key Check Fail, Please Check your API Key respoone : 401
+2024-04-23 13:10:36,195 - shared_logger - ERROR - MainThread code : 401, Invalid Authentication
+2024-04-23 13:12:11,062 - logger - ERROR - MainThread code : 401, Invalid Authentication
+2024-04-23 13:13:32,733 - logger - INFO - MainThread code : 401
+2024-04-23 13:13:51,877 - logger - INFO - MainThread code : 401
+2024-04-23 13:14:31,380 - logger - INFO - MainThread API key is valid
+2024-04-23 13:14:36,415 - logger - INFO - MainThread API key is valid
+2024-04-23 13:14:45,574 - logger - INFO - MainThread API key is valid
+2024-04-23 13:25:53,398 - logger - INFO - Version 1.0.0
+2024-04-23 13:25:53,398 - logger - INFO - Starting sql_Action task...
+2024-04-23 13:26:20,174 - logger - INFO - MainThread API key is valid
+2024-04-23 13:26:36,309 - logger - INFO - Version 1.0.0
+2024-04-23 13:26:36,310 - logger - INFO - Starting sql_Action task...
+2024-04-23 13:27:13,085 - logger - INFO - Version 1.0.0
+2024-04-23 13:27:20,428 - logger - INFO - Back To Main Page

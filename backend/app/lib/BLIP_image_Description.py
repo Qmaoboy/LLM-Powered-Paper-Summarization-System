@@ -1,8 +1,8 @@
 from transformers import Blip2ForConditionalGeneration,Blip2Processor
 import torch,os
 device = "cuda" if torch.cuda.is_available() else "cpu"
-from mysql_class import mysql_db_client
-from utilized import *
+from lib.mysql_class import mysql_db_client
+from lib.utilized import *
 from tqdm import tqdm
 from io import BytesIO
 from PIL import Image

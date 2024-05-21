@@ -1,0 +1,424 @@
+2024-03-27 13:17:20,551 - shared_logger - INFO - Starting GPT_gen task...
+2024-03-27 13:17:31,667 - shared_logger - DEBUG - MainThread check API Key Check Fail, Please Check your API Key
+2024-03-27 13:17:53,194 - shared_logger - INFO - Starting GPT_gen task...
+2024-03-27 13:18:00,497 - shared_logger - DEBUG - MainThread check API Key Check Fail, Please Check your API Key
+2024-03-27 13:18:18,101 - shared_logger - INFO - Starting GPT_gen task...
+2024-03-27 13:18:27,891 - shared_logger - DEBUG - MainThread check API Key Check Fail, Please Check your API Key
+2024-03-27 13:19:52,519 - shared_logger - INFO - Starting sql_Action task...
+2024-03-27 13:20:01,929 - shared_logger - INFO - Table Papers_info Initialize Success
+2024-03-27 13:20:01,970 - shared_logger - INFO - Table Image_Files Initialize Success
+2024-03-27 13:20:02,016 - shared_logger - INFO - Table GPT_Cost Initialize Success
+2024-03-27 13:20:06,100 - shared_logger - INFO - End Sql Operator
+2024-03-27 13:23:26,768 - shared_logger - INFO - Starting sql_Action task...
+2024-04-12 18:21:19,798 - shared_logger - DEBUG - Text input empty, please check your input text
+2024-04-22 15:23:56,564 - shared_logger - INFO - Starting sql_Action task...
+2024-04-22 15:24:11,539 - shared_logger - INFO - Starting sql_Action task...
+2024-04-22 15:24:18,771 - shared_logger - DEBUG - japan not found in Mysql Papers_info Table
+2024-04-22 17:12:21,592 - shared_logger - INFO - Starting sql_Action task...
+2024-04-22 17:16:42,715 - shared_logger - INFO - Starting GPT_gen task...
+2024-04-22 17:17:12,699 - shared_logger - INFO - D:\Innolux\IDW_Papers Put job : 463, Thread num: 16
+2024-04-22 17:31:34,391 - shared_logger - INFO - Starting GPT_gen task...
+2024-04-22 17:33:34,002 - shared_logger - INFO - Starting GPT_gen task...
+2024-04-22 17:33:49,041 - shared_logger - INFO - Thread-1 Start GPT Generateion
+2024-04-22 17:33:49,539 - shared_logger - INFO - Thread-2 Start GPT Generateion
+2024-04-22 17:33:50,812 - shared_logger - INFO - Thread-3 Start GPT Generateion
+2024-04-22 17:33:51,528 - shared_logger - INFO - Thread-4 Start GPT Generateion
+2024-04-22 17:33:52,028 - shared_logger - INFO - Thread-5 Start GPT Generateion
+2024-04-22 17:33:52,615 - shared_logger - INFO - Thread-6 Start GPT Generateion
+2024-04-22 17:33:53,133 - shared_logger - INFO - Thread-7 Start GPT Generateion
+2024-04-22 17:33:53,617 - shared_logger - INFO - Thread-8 Start GPT Generateion
+2024-04-22 17:33:54,074 - shared_logger - INFO - Thread-9 Start GPT Generateion
+2024-04-22 17:33:54,570 - shared_logger - INFO - Thread-10 Start GPT Generateion
+2024-04-22 17:33:55,150 - shared_logger - INFO - Thread-11 Start GPT Generateion
+2024-04-22 17:33:55,637 - shared_logger - INFO - Thread-12 Start GPT Generateion
+2024-04-22 17:33:56,003 - shared_logger - INFO - Thread-13 Start GPT Generateion
+2024-04-22 17:33:56,548 - shared_logger - INFO - Thread-14 Start GPT Generateion
+2024-04-22 17:33:57,166 - shared_logger - INFO - Thread-15 Start GPT Generateion
+2024-04-22 17:33:57,714 - shared_logger - INFO - Thread-16 Start GPT Generateion
+2024-04-22 17:33:57,714 - shared_logger - INFO - D:\Innolux\test Put job : 1, Thread num: 16
+2024-04-22 17:34:46,083 - shared_logger - INFO - Starting GPT_gen task...
+2024-04-22 17:34:48,276 - shared_logger - INFO - Thread-1 Start GPT Generateion
+2024-04-22 17:34:48,281 - shared_logger - INFO - Thread-1 perform paper Summerization
+2024-04-22 17:34:49,332 - shared_logger - INFO - Thread-2 Start GPT Generateion
+2024-04-22 17:34:49,336 - shared_logger - INFO - Thread-2 perform paper Summerization
+2024-04-22 17:34:49,860 - shared_logger - INFO - Thread-3 Start GPT Generateion
+2024-04-22 17:34:49,864 - shared_logger - INFO - Thread-3 perform paper Summerization
+2024-04-22 17:34:50,551 - shared_logger - INFO - Thread-4 Start GPT Generateion
+2024-04-22 17:34:50,555 - shared_logger - INFO - Thread-4 perform paper Summerization
+2024-04-22 17:34:50,995 - shared_logger - INFO - Thread-5 Start GPT Generateion
+2024-04-22 17:34:51,004 - shared_logger - INFO - Thread-5 perform paper Summerization
+2024-04-22 17:34:51,747 - shared_logger - INFO - Thread-6 Start GPT Generateion
+2024-04-22 17:34:51,751 - shared_logger - INFO - Thread-6 perform paper Summerization
+2024-04-22 17:34:52,418 - shared_logger - INFO - Thread-7 Start GPT Generateion
+2024-04-22 17:34:52,421 - shared_logger - INFO - Thread-7 perform paper Summerization
+2024-04-22 17:34:53,125 - shared_logger - INFO - Thread-8 Start GPT Generateion
+2024-04-22 17:34:53,128 - shared_logger - INFO - Thread-8 perform paper Summerization
+2024-04-22 17:34:53,717 - shared_logger - INFO - Thread-9 Start GPT Generateion
+2024-04-22 17:34:53,721 - shared_logger - INFO - Thread-9 perform paper Summerization
+2024-04-22 17:34:54,328 - shared_logger - INFO - Thread-10 Start GPT Generateion
+2024-04-22 17:34:54,335 - shared_logger - INFO - Thread-10 perform paper Summerization
+2024-04-22 17:34:54,857 - shared_logger - INFO - Thread-11 Start GPT Generateion
+2024-04-22 17:34:54,869 - shared_logger - INFO - Thread-11 perform paper Summerization
+2024-04-22 17:34:55,320 - shared_logger - INFO - Thread-12 Start GPT Generateion
+2024-04-22 17:34:55,325 - shared_logger - INFO - Thread-12 perform paper Summerization
+2024-04-22 17:34:55,891 - shared_logger - INFO - Thread-13 Start GPT Generateion
+2024-04-22 17:34:55,922 - shared_logger - INFO - Thread-13 perform paper Summerization
+2024-04-22 17:34:56,184 - shared_logger - INFO - Thread-5 Finish GPT Generateion
+2024-04-22 17:34:56,531 - shared_logger - INFO - Thread-14 Start GPT Generateion
+2024-04-22 17:34:56,536 - shared_logger - INFO - Thread-14 perform paper Summerization
+2024-04-22 17:34:57,293 - shared_logger - INFO - Thread-15 Start GPT Generateion
+2024-04-22 17:34:57,302 - shared_logger - INFO - Thread-15 perform paper Summerization
+2024-04-22 17:34:58,179 - shared_logger - INFO - Thread-16 Start GPT Generateion
+2024-04-22 17:34:58,179 - shared_logger - INFO - D:\Innolux\IDW_Papers Put job : 463, Thread num: 16
+2024-04-22 17:34:58,182 - shared_logger - INFO - Thread-16 perform paper Summerization
+2024-04-22 17:35:02,824 - shared_logger - INFO - Thread-13 Finish GPT Generateion
+2024-04-22 17:35:07,682 - shared_logger - INFO - Thread-5 Finish CLIP Generateion
+2024-04-22 17:35:07,683 - shared_logger - INFO - Thread-5 Insert to DB: 3D4_3DSA4_1,usage 1775 tokens, Progress: 447\463
+
+2024-04-22 17:35:07,687 - shared_logger - INFO - Thread-5 perform paper Summerization
+2024-04-22 17:35:08,237 - shared_logger - INFO - Thread-13 Finish CLIP Generateion
+2024-04-22 17:35:08,237 - shared_logger - INFO - Thread-13 Insert to DB: 3D8_3DSA8_1,usage 2895 tokens, Progress: 446\463
+
+2024-04-22 17:35:08,241 - shared_logger - INFO - Thread-13 perform paper Summerization
+2024-04-22 17:35:10,563 - shared_logger - INFO - Thread-11 Finish GPT Generateion
+2024-04-22 17:35:13,151 - shared_logger - INFO - Thread-10 Finish GPT Generateion
+2024-04-22 17:35:13,411 - shared_logger - INFO - Thread-2 Finish GPT Generateion
+2024-04-22 17:35:13,460 - shared_logger - INFO - Thread-15 Finish GPT Generateion
+2024-04-22 17:35:13,713 - shared_logger - INFO - Thread-3 Finish GPT Generateion
+2024-04-22 17:35:13,795 - shared_logger - INFO - Thread-6 Finish GPT Generateion
+2024-04-22 17:35:16,118 - shared_logger - INFO - Thread-14 Finish GPT Generateion
+2024-04-22 17:35:19,354 - shared_logger - INFO - Thread-7 Finish GPT Generateion
+2024-04-22 17:35:19,401 - shared_logger - INFO - Thread-1 Finish GPT Generateion
+2024-04-22 17:35:23,543 - shared_logger - INFO - Thread-4 Finish GPT Generateion
+2024-04-22 17:35:23,871 - shared_logger - INFO - Thread-11 Finish CLIP Generateion
+2024-04-22 17:35:23,873 - shared_logger - INFO - Thread-11 Insert to DB: 3D6_3DSA6_3,usage 4043 tokens, Progress: 445\463
+
+2024-04-22 17:35:23,878 - shared_logger - INFO - Thread-11 perform paper Summerization
+2024-04-22 17:35:26,820 - shared_logger - INFO - Thread-5 Finish GPT Generateion
+2024-04-22 17:35:27,693 - shared_logger - INFO - Thread-12 Finish GPT Generateion
+2024-04-22 17:35:27,733 - shared_logger - INFO - Thread-8 Finish GPT Generateion
+2024-04-22 17:35:30,471 - shared_logger - INFO - Thread-16 Finish GPT Generateion
+2024-04-22 17:35:36,681 - shared_logger - INFO - Thread-10 Finish CLIP Generateion
+2024-04-22 17:35:36,681 - shared_logger - INFO - Thread-10 Insert to DB: 3D6_3DSA6_2,usage 3863 tokens, Progress: 444\463
+
+2024-04-22 17:35:36,685 - shared_logger - INFO - Thread-10 perform paper Summerization
+2024-04-22 17:35:40,060 - shared_logger - INFO - Thread-6 Finish CLIP Generateion
+2024-04-22 17:35:40,061 - shared_logger - INFO - Thread-6 Insert to DB: 3D4_3DSA4_2,usage 5663 tokens, Progress: 443\463
+
+2024-04-22 17:35:40,071 - shared_logger - INFO - Thread-6 perform paper Summerization
+2024-04-22 17:35:44,470 - shared_logger - INFO - Thread-13 Finish GPT Generateion
+2024-04-22 17:35:45,260 - shared_logger - INFO - Thread-2 Finish CLIP Generateion
+2024-04-22 17:35:45,261 - shared_logger - INFO - Thread-2 Insert to DB: 3D2_3DSA2_2,usage 6522 tokens, Progress: 442\463
+
+2024-04-22 17:35:45,275 - shared_logger - INFO - Thread-2 perform paper Summerization
+2024-04-22 17:35:47,536 - shared_logger - INFO - Thread-3 Finish CLIP Generateion
+2024-04-22 17:35:47,536 - shared_logger - INFO - Thread-3 Insert to DB: 3D2_3DSA2_3,usage 5729 tokens, Progress: 441\463
+
+2024-04-22 17:35:47,548 - shared_logger - INFO - Thread-3 perform paper Summerization
+2024-04-22 17:35:50,285 - shared_logger - INFO - Thread-7 Finish CLIP Generateion
+2024-04-22 17:35:50,286 - shared_logger - INFO - Thread-7 Insert to DB: 3D4_3DSA4_3,usage 5447 tokens, Progress: 440\463
+
+2024-04-22 17:35:50,295 - shared_logger - INFO - Thread-7 perform paper Summerization
+2024-04-22 17:35:53,697 - shared_logger - INFO - Thread-15 Finish CLIP Generateion
+2024-04-22 17:35:53,700 - shared_logger - INFO - Thread-15 Insert to DB: 3D8_3DSA8_3,usage 3551 tokens, Progress: 439\463
+
+2024-04-22 17:35:53,716 - shared_logger - INFO - Thread-15 perform paper Summerization
+2024-04-22 17:35:55,148 - shared_logger - INFO - Thread-14 Finish CLIP Generateion
+2024-04-22 17:35:55,149 - shared_logger - INFO - Thread-14 Insert to DB: 3D8_3DSA8_2,usage 3871 tokens, Progress: 438\463
+
+2024-04-22 17:35:55,210 - shared_logger - INFO - Thread-14 perform paper Summerization
+2024-04-22 17:35:58,554 - shared_logger - INFO - Thread-5 Finish CLIP Generateion
+2024-04-22 17:35:58,555 - shared_logger - INFO - Thread-5 Insert to DB: 3Dp1_1,usage 6457 tokens, Progress: 437\463
+
+2024-04-22 17:35:58,563 - shared_logger - INFO - Thread-5 perform paper Summerization
+2024-04-22 17:35:59,749 - shared_logger - INFO - Thread-10 Finish GPT Generateion
+2024-04-22 17:35:59,977 - shared_logger - INFO - Thread-1 Finish CLIP Generateion
+2024-04-22 17:35:59,978 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_1,usage 5713 tokens, Progress: 436\463
+
+2024-04-22 17:36:00,008 - shared_logger - INFO - Thread-1 perform paper Summerization
+2024-04-22 17:36:02,422 - shared_logger - INFO - Thread-16 Finish CLIP Generateion
+2024-04-22 17:36:02,423 - shared_logger - INFO - Thread-16 Insert to DB: 3D8_3DSA8_4,usage 5700 tokens, Progress: 435\463
+
+2024-04-22 17:36:02,430 - shared_logger - INFO - Thread-16 perform paper Summerization
+2024-04-22 17:36:03,989 - shared_logger - INFO - Thread-13 Finish CLIP Generateion
+2024-04-22 17:36:03,989 - shared_logger - INFO - Thread-13 Insert to DB: 3Dp1_2,usage 10447 tokens, Progress: 434\463
+
+2024-04-22 17:36:03,997 - shared_logger - INFO - Thread-13 perform paper Summerization
+2024-04-22 17:36:07,874 - shared_logger - INFO - Thread-9 Finish GPT Generateion
+2024-04-22 17:36:09,325 - shared_logger - INFO - Thread-4 Finish CLIP Generateion
+2024-04-22 17:36:09,326 - shared_logger - INFO - Thread-4 Insert to DB: 3D2_3DSA2_4,usage 5572 tokens, Progress: 433\463
+
+2024-04-22 17:36:09,335 - shared_logger - INFO - Thread-4 perform paper Summerization
+2024-04-22 17:36:10,960 - shared_logger - INFO - Thread-10 Finish CLIP Generateion
+2024-04-22 17:36:10,960 - shared_logger - INFO - Thread-10 Insert to DB: 3Dp1_4L,usage 9820 tokens, Progress: 432\463
+
+2024-04-22 17:36:10,968 - shared_logger - INFO - Thread-10 perform paper Summerization
+2024-04-22 17:36:10,969 - shared_logger - INFO - Thread-6 Finish GPT Generateion
+2024-04-22 17:36:13,886 - shared_logger - INFO - Thread-1 Finish GPT Generateion
+2024-04-22 17:36:14,146 - shared_logger - INFO - Thread-2 Finish GPT Generateion
+2024-04-22 17:36:15,139 - shared_logger - INFO - Thread-8 Finish CLIP Generateion
+2024-04-22 17:36:15,140 - shared_logger - INFO - Thread-8 Insert to DB: 3D4_3DSA4_4,usage 6539 tokens, Progress: 431\463
+
+2024-04-22 17:36:15,147 - shared_logger - INFO - Thread-8 perform paper Summerization
+2024-04-22 17:36:15,942 - shared_logger - INFO - Thread-3 Finish GPT Generateion
+2024-04-22 17:36:17,798 - shared_logger - INFO - Thread-15 Finish GPT Generateion
+2024-04-22 17:36:21,411 - shared_logger - INFO - Thread-11 Finish GPT Generateion
+2024-04-22 17:36:22,303 - shared_logger - INFO - Thread-5 Finish GPT Generateion
+2024-04-22 17:36:25,060 - shared_logger - INFO - Thread-16 Finish GPT Generateion
+2024-04-22 17:36:26,289 - shared_logger - INFO - Thread-10 Finish GPT Generateion
+2024-04-22 17:36:27,670 - shared_logger - INFO - Thread-6 Finish CLIP Generateion
+2024-04-22 17:36:27,671 - shared_logger - INFO - Thread-6 Insert to DB: 3Dp1_5L,usage 13471 tokens, Progress: 430\463
+
+2024-04-22 17:36:27,682 - shared_logger - INFO - Thread-6 perform paper Summerization
+2024-04-22 17:36:28,822 - shared_logger - INFO - Thread-13 Finish GPT Generateion
+2024-04-22 17:36:28,839 - shared_logger - INFO - Thread-4 Finish GPT Generateion
+2024-04-22 17:36:30,383 - shared_logger - INFO - Thread-14 Finish GPT Generateion
+2024-04-22 17:36:32,641 - shared_logger - INFO - Thread-7 Finish GPT Generateion
+2024-04-22 17:36:38,609 - shared_logger - INFO - Thread-8 Finish GPT Generateion
+2024-04-22 17:36:42,002 - shared_logger - INFO - Thread-1 Finish CLIP Generateion
+2024-04-22 17:36:42,003 - shared_logger - INFO - Thread-1 Insert to DB: 3DSA1_3D1_4,usage 8867 tokens, Progress: 429\463
+
+2024-04-22 17:36:42,012 - shared_logger - INFO - Thread-1 perform paper Summerization
+2024-04-22 17:36:51,328 - shared_logger - INFO - Thread-3 Finish CLIP Generateion
+2024-04-22 17:36:51,329 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_7L,usage 11722 tokens, Progress: 428\463
+
+2024-04-22 17:36:51,338 - shared_logger - INFO - Thread-3 perform paper Summerization
+2024-04-22 17:36:51,816 - shared_logger - INFO - Thread-2 Finish CLIP Generateion
+2024-04-22 17:36:51,816 - shared_logger - INFO - Thread-2 Insert to DB: 3Dp1_6L,usage 10011 tokens, Progress: 427\463
+
+2024-04-22 17:36:51,894 - shared_logger - INFO - Thread-2 perform paper Summerization
+2024-04-22 17:36:53,781 - shared_logger - INFO - Thread-6 Finish GPT Generateion
+2024-04-22 17:36:55,017 - shared_logger - INFO - Thread-11 Finish CLIP Generateion
+2024-04-22 17:36:55,018 - shared_logger - INFO - Thread-11 Insert to DB: 3Dp1_3,usage 7546 tokens, Progress: 426\463
+
+2024-04-22 17:36:55,028 - shared_logger - INFO - Thread-11 perform paper Summerization
+2024-04-22 17:37:33,929 - shared_logger - INFO - Starting GPT_gen task...
+2024-04-22 17:37:36,056 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D2_3DSA2_1,usage 25 tokens, Progress: 462\463
+
+2024-04-22 17:37:36,102 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_1,usage 25 tokens, Progress: 462\463
+
+2024-04-22 17:37:36,109 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D2_3DSA2_2,usage 25 tokens, Progress: 461\463
+
+2024-04-22 17:37:36,133 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_2,usage 25 tokens, Progress: 461\463
+
+2024-04-22 17:37:36,145 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D2_3DSA2_3,usage 25 tokens, Progress: 460\463
+
+2024-04-22 17:37:36,184 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_3,usage 25 tokens, Progress: 460\463
+
+2024-04-22 17:37:36,192 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D2_3DSA2_4,usage 25 tokens, Progress: 459\463
+
+2024-04-22 17:37:36,251 - shared_logger - INFO - Thread-1 Insert to DB: 3D2_3DSA2_4,usage 25 tokens, Progress: 459\463
+
+2024-04-22 17:37:36,259 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D4_3DSA4_1,usage 25 tokens, Progress: 458\463
+
+2024-04-22 17:37:36,305 - shared_logger - INFO - Thread-1 Insert to DB: 3D4_3DSA4_1,usage 25 tokens, Progress: 458\463
+
+2024-04-22 17:37:36,317 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D4_3DSA4_2,usage 25 tokens, Progress: 457\463
+
+2024-04-22 17:37:36,356 - shared_logger - INFO - Thread-1 Insert to DB: 3D4_3DSA4_2,usage 25 tokens, Progress: 457\463
+
+2024-04-22 17:37:36,364 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D4_3DSA4_3,usage 25 tokens, Progress: 456\463
+
+2024-04-22 17:37:36,387 - shared_logger - INFO - Thread-1 Insert to DB: 3D4_3DSA4_3,usage 25 tokens, Progress: 456\463
+
+2024-04-22 17:37:36,398 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D4_3DSA4_4,usage 25 tokens, Progress: 455\463
+
+2024-04-22 17:37:36,437 - shared_logger - INFO - Thread-1 Insert to DB: 3D4_3DSA4_4,usage 25 tokens, Progress: 455\463
+
+2024-04-22 17:37:36,450 - shared_logger - INFO - Thread-1 Done !!! Exist in DB: 3D6_3DSA6_1,usage 25 tokens, Progress: 454\463
+
+2024-04-22 17:37:36,475 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D6_3DSA6_2,usage 25 tokens, Progress: 453\463
+
+2024-04-22 17:37:36,522 - shared_logger - INFO - Thread-2 Insert to DB: 3D6_3DSA6_2,usage 25 tokens, Progress: 453\463
+
+2024-04-22 17:37:36,530 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D6_3DSA6_3,usage 25 tokens, Progress: 452\463
+
+2024-04-22 17:37:36,555 - shared_logger - INFO - Thread-2 Insert to DB: 3D6_3DSA6_3,usage 25 tokens, Progress: 452\463
+
+2024-04-22 17:37:36,568 - shared_logger - INFO - Thread-2 Done !!! Exist in DB: 3D6_3DSA6_4,usage 25 tokens, Progress: 451\463
+
+2024-04-22 17:37:37,192 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3D8_3DSA8_1,usage 25 tokens, Progress: 450\463
+
+2024-04-22 17:37:37,227 - shared_logger - INFO - Thread-3 Insert to DB: 3D8_3DSA8_1,usage 25 tokens, Progress: 450\463
+
+2024-04-22 17:37:37,234 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3D8_3DSA8_2,usage 25 tokens, Progress: 449\463
+
+2024-04-22 17:37:37,255 - shared_logger - INFO - Thread-3 Insert to DB: 3D8_3DSA8_2,usage 25 tokens, Progress: 449\463
+
+2024-04-22 17:37:37,262 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3D8_3DSA8_3,usage 25 tokens, Progress: 448\463
+
+2024-04-22 17:37:37,283 - shared_logger - INFO - Thread-3 Insert to DB: 3D8_3DSA8_3,usage 25 tokens, Progress: 448\463
+
+2024-04-22 17:37:37,299 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3D8_3DSA8_4,usage 25 tokens, Progress: 447\463
+
+2024-04-22 17:37:37,328 - shared_logger - INFO - Thread-3 Insert to DB: 3D8_3DSA8_4,usage 25 tokens, Progress: 447\463
+
+2024-04-22 17:37:37,340 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_1,usage 25 tokens, Progress: 446\463
+
+2024-04-22 17:37:37,364 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_1,usage 25 tokens, Progress: 446\463
+
+2024-04-22 17:37:37,418 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_2,usage 25 tokens, Progress: 445\463
+
+2024-04-22 17:37:37,485 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_2,usage 25 tokens, Progress: 445\463
+
+2024-04-22 17:37:37,496 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_3,usage 25 tokens, Progress: 444\463
+
+2024-04-22 17:37:37,525 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_3,usage 25 tokens, Progress: 444\463
+
+2024-04-22 17:37:37,536 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_4L,usage 25 tokens, Progress: 443\463
+
+2024-04-22 17:37:37,598 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_4L,usage 25 tokens, Progress: 442\463
+
+2024-04-22 17:37:37,619 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3Dp1_5L,usage 25 tokens, Progress: 441\463
+
+2024-04-22 17:37:37,670 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_6L,usage 25 tokens, Progress: 441\463
+
+2024-04-22 17:37:37,687 - shared_logger - INFO - Thread-4 Insert to DB: 3Dp1_5L,usage 25 tokens, Progress: 441\463
+
+2024-04-22 17:37:37,719 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3Dp1_7L,usage 25 tokens, Progress: 440\463
+
+2024-04-22 17:37:38,452 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_6L,usage 25 tokens, Progress: 440\463
+
+2024-04-22 17:37:38,454 - shared_logger - INFO - Thread-4 Insert to DB: 3Dp1_7L,usage 25 tokens, Progress: 439\463
+
+2024-04-22 17:37:38,466 - shared_logger - INFO - Thread-3 Done !!! Exist in DB: 3Dp1_8L,usage 25 tokens, Progress: 438\463
+
+2024-04-22 17:37:38,469 - shared_logger - INFO - Thread-4 Done !!! Exist in DB: 3DSA1_3D1_1,usage 25 tokens, Progress: 438\463
+
+2024-04-22 17:37:38,483 - shared_logger - INFO - Thread-5 Done !!! Exist in DB: 3DSA1_3D1_2,usage 25 tokens, Progress: 437\463
+
+2024-04-22 17:37:39,338 - shared_logger - INFO - Thread-6 Done !!! Exist in DB: 3DSA1_3D1_3,usage 25 tokens, Progress: 436\463
+
+2024-04-22 17:37:39,846 - shared_logger - INFO - Thread-7 Done !!! Exist in DB: 3DSA1_3D1_4,usage 25 tokens, Progress: 435\463
+
+2024-04-22 17:37:39,911 - shared_logger - INFO - Thread-7 Insert to DB: 3DSA1_3D1_4,usage 25 tokens, Progress: 435\463
+
+2024-04-22 17:37:39,927 - shared_logger - INFO - Thread-7 Done !!! Exist in DB: 3DSA3_3D3_1,usage 25 tokens, Progress: 434\463
+
+2024-04-22 17:37:40,353 - shared_logger - INFO - Thread-8 Done !!! Exist in DB: 3DSA3_3D3_2,usage 25 tokens, Progress: 433\463
+
+2024-04-22 17:37:40,838 - shared_logger - INFO - Thread-9 Done !!! Exist in DB: 3DSA3_3D3_3,usage 25 tokens, Progress: 432\463
+
+2024-04-22 17:37:43,430 - shared_logger - INFO - Thread-10 Done !!! Exist in DB: 3DSA5_3D5_1,usage 25 tokens, Progress: 431\463
+
+2024-04-22 17:37:45,860 - shared_logger - INFO - Thread-11 Done !!! Exist in DB: 3DSA5_3D5_2,usage 25 tokens, Progress: 430\463
+
+2024-04-22 17:37:46,368 - shared_logger - INFO - Thread-12 Done !!! Exist in DB: 3DSA5_3D5_3,usage 25 tokens, Progress: 429\463
+
+2024-04-22 17:37:52,035 - shared_logger - INFO - D:\Innolux\IDW_Papers Put job : 463, Thread num: 16
+2024-04-22 17:38:24,953 - shared_logger - INFO - Thread-6 Insert to DB: 3DSA1_3D1_3,usage 25 tokens, Progress: 425\463
+
+2024-04-22 17:38:24,960 - shared_logger - INFO - Thread-10 Insert to DB: 3DSA5_3D5_1,usage 25 tokens, Progress: 424\463
+
+2024-04-22 17:38:29,648 - shared_logger - INFO - Thread-11 Insert to DB: 3DSA5_3D5_2,usage 25 tokens, Progress: 423\463
+
+2024-04-22 17:38:29,829 - shared_logger - INFO - Thread-3 Insert to DB: 3Dp1_8L,usage 25 tokens, Progress: 422\463
+
+2024-04-22 17:38:32,761 - shared_logger - INFO - Thread-7 Insert to DB: 3DSA3_3D3_1,usage 25 tokens, Progress: 421\463
+
+2024-04-22 17:38:33,078 - shared_logger - INFO - Thread-14 Insert to DB: 3DSA7_3D7_1,usage 4260 tokens, Progress: 420\463
+
+2024-04-22 17:38:34,346 - shared_logger - INFO - Thread-16 Insert to DB: 3DSA7_3D7_3,usage 3712 tokens, Progress: 419\463
+
+2024-04-22 17:38:40,632 - shared_logger - INFO - Thread-4 Insert to DB: 3DSA1_3D1_1,usage 25 tokens, Progress: 418\463
+
+2024-04-22 17:38:46,178 - shared_logger - INFO - Thread-9 Insert to DB: 3DSA3_3D3_3,usage 25 tokens, Progress: 417\463
+
+2024-04-22 17:38:47,779 - shared_logger - INFO - Thread-13 Insert to DB: 3DSA5_3D5_4,usage 5787 tokens, Progress: 416\463
+
+2024-04-22 17:38:52,596 - shared_logger - INFO - Thread-12 Insert to DB: 3DSA5_3D5_3,usage 25 tokens, Progress: 415\463
+
+2024-04-22 17:38:53,417 - shared_logger - INFO - Thread-2 Insert to DB: 3D6_3DSA6_4,usage 25 tokens, Progress: 414\463
+
+2024-04-22 17:38:54,593 - shared_logger - INFO - Thread-8 Insert to DB: 3DSA3_3D3_2,usage 25 tokens, Progress: 413\463
+
+2024-04-22 17:39:00,610 - shared_logger - INFO - Thread-7 Insert to DB: 3DSAp1_12L,usage 3630 tokens, Progress: 412\463
+
+2024-04-22 17:39:00,782 - shared_logger - INFO - Thread-6 Insert to DB: 3DSA7_3D7_4,usage 5379 tokens, Progress: 411\463
+
+2024-04-22 17:39:04,853 - shared_logger - INFO - Thread-15 Insert to DB: 3DSA7_3D7_2,usage 2951 tokens, Progress: 410\463
+
+2024-04-22 17:39:15,030 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp1_11L,usage 5642 tokens, Progress: 409\463
+
+2024-04-22 17:39:19,277 - shared_logger - INFO - Thread-5 Insert to DB: 3DSA1_3D1_2,usage 25 tokens, Progress: 408\463
+
+2024-04-22 17:39:21,365 - shared_logger - INFO - Thread-11 Insert to DB: 3DSAp1_10L,usage 7285 tokens, Progress: 407\463
+
+2024-04-22 17:39:25,965 - shared_logger - INFO - Thread-13 Insert to DB: 3DSAp1_2,usage 9525 tokens, Progress: 406\463
+
+2024-04-22 17:39:28,108 - shared_logger - INFO - Thread-14 Insert to DB: 3DSAp1_13L,usage 13357 tokens, Progress: 405\463
+
+2024-04-22 17:39:33,415 - shared_logger - INFO - Thread-9 Insert to DB: 3DSAp1_16L,usage 3273 tokens, Progress: 404\463
+
+2024-04-22 17:39:37,561 - shared_logger - INFO - Thread-12 Insert to DB: 3DSAp1_3,usage 3370 tokens, Progress: 403\463
+
+2024-04-22 17:39:38,734 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp1_15L,usage 5791 tokens, Progress: 402\463
+
+2024-04-22 17:39:39,305 - shared_logger - INFO - Thread-16 Insert to DB: 3DSAp1_14L,usage 11097 tokens, Progress: 401\463
+
+2024-04-22 17:39:44,740 - shared_logger - INFO - Thread-10 Insert to DB: 3DSAp1_1,usage 8147 tokens, Progress: 400\463
+
+2024-04-22 17:39:44,834 - shared_logger - INFO - Thread-15 Insert to DB: 3DSAp1_8,usage 6689 tokens, Progress: 399\463
+
+2024-04-22 17:39:47,500 - shared_logger - INFO - Thread-7 Insert to DB: 3DSAp1_6,usage 8749 tokens, Progress: 398\463
+
+2024-04-22 17:39:52,240 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp1_4,usage 7412 tokens, Progress: 397\463
+
+2024-04-22 17:39:56,582 - shared_logger - INFO - Thread-11 Insert to DB: 3DSAp2_10L,usage 10867 tokens, Progress: 396\463
+
+2024-04-22 17:39:59,437 - shared_logger - INFO - Thread-5 Insert to DB: 3DSAp2_1,usage 5974 tokens, Progress: 395\463
+
+2024-04-22 17:40:01,749 - shared_logger - INFO - Thread-13 Insert to DB: 3DSAp2_11L,usage 14840 tokens, Progress: 394\463
+
+2024-04-22 17:40:03,617 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp1_9,usage 11876 tokens, Progress: 393\463
+
+2024-04-22 17:40:08,900 - shared_logger - INFO - Thread-6 Insert to DB: 3DSAp1_7,usage 9943 tokens, Progress: 392\463
+
+2024-04-22 17:40:21,021 - shared_logger - INFO - Thread-8 Insert to DB: 3DSAp1_5,usage 5566 tokens, Progress: 391\463
+
+2024-04-22 17:40:24,941 - shared_logger - INFO - Thread-10 Insert to DB: 3DSAp2_17L,usage 12153 tokens, Progress: 390\463
+
+2024-04-22 17:40:27,814 - shared_logger - INFO - Thread-12 Insert to DB: 3DSAp2_14L,usage 9067 tokens, Progress: 389\463
+
+2024-04-22 17:40:35,421 - shared_logger - INFO - Thread-2 Insert to DB: 3DSAp2_2,usage 11014 tokens, Progress: 388\463
+
+2024-04-22 17:40:37,745 - shared_logger - INFO - Thread-14 Insert to DB: 3DSAp2_12L,usage 19791 tokens, Progress: 387\463
+
+2024-04-22 17:40:39,207 - shared_logger - INFO - Thread-15 Insert to DB: 3DSAp2_18L,usage 10704 tokens, Progress: 386\463
+
+2024-04-22 17:40:44,760 - shared_logger - INFO - Thread-11 Insert to DB: 3DSAp2_3,usage 14486 tokens, Progress: 385\463
+
+2024-04-22 17:40:45,644 - shared_logger - INFO - Thread-7 Insert to DB: 3DSAp2_19L,usage 12717 tokens, Progress: 384\463
+
+2024-04-22 17:40:47,322 - shared_logger - INFO - Thread-9 Insert to DB: 3DSAp2_13L,usage 11675 tokens, Progress: 383\463
+
+2024-04-22 17:40:51,600 - shared_logger - INFO - Thread-4 Insert to DB: 3DSAp2_15L,usage 13484 tokens, Progress: 382\463
+
+2024-04-22 17:40:51,717 - shared_logger - INFO - Thread-16 Insert to DB: 3DSAp2_16L,usage 17932 tokens, Progress: 381\463
+
+2024-04-22 17:40:53,366 - shared_logger - INFO - Thread-3 Insert to DB: 3DSAp2_6,usage 16876 tokens, Progress: 380\463
+
+2024-04-22 17:40:57,588 - shared_logger - INFO - Thread-13 Insert to DB: 3DSAp2_5,usage 20812 tokens, Progress: 379\463
+
+2024-04-22 17:40:57,782 - shared_logger - INFO - Thread-5 Insert to DB: 3DSAp2_4,usage 11529 tokens, Progress: 378\463
+
+2024-04-22 17:41:00,961 - shared_logger - INFO - Thread-8 Insert to DB: 3DSAp2_8,usage 10988 tokens, Progress: 377\463
+
+2024-04-22 17:41:03,702 - shared_logger - INFO - Thread-15 Insert to DB: AMD1_4L,usage 14390 tokens, Progress: 376\463
+
+2024-04-22 17:41:11,827 - shared_logger - INFO - Thread-14 Insert to DB: AMD1_3,usage 23781 tokens, Progress: 375\463
+
+2024-04-22 17:41:12,577 - shared_logger - INFO - Thread-6 Insert to DB: 3DSAp2_7,usage 17937 tokens, Progress: 374\463
+
+2024-04-22 17:41:14,317 - shared_logger - INFO - Thread-11 Insert to DB: AMD2_1,usage 18142 tokens, Progress: 373\463
+
+2024-04-22 17:41:17,726 - shared_logger - INFO - Thread-1 Insert to DB: 3D6_3DSA6_1,usage 25 tokens, Progress: 372\463
+
+2024-04-22 17:41:20,748 - shared_logger - INFO - Thread-2 Insert to DB: AMD1_2,usage 16859 tokens, Progress: 371\463
+
+2024-04-22 17:41:27,167 - shared_logger - INFO - Thread-4 Insert to DB: AMD2_4L,usage 17154 tokens, Progress: 370\463
+
+2024-04-22 17:41:29,811 - shared_logger - INFO - Thread-10 Insert to DB: 3DSAp2_9L,usage 20196 tokens, Progress: 369\463
+
+2024-04-22 17:41:33,849 - shared_logger - INFO - Thread-7 Insert to DB: AMD2_2,usage 20084 tokens, Progress: 368\463
+

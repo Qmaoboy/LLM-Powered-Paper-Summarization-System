@@ -1,19 +1,19 @@
 MainConfig:
-        tread_size: 16
+        thread_size: 1
         GPTmodel: "gpt-3.5-turbo-0125"
         device : "cuda"
         gpt_Dubug_mode: False
         clip_Dubug_mode: False
         sql_debug_mode: False
-        blip_Dubug_mode: True
+        blip_Dubug_mode: False
         make_ppt: True
+        version: "1.2.0"
 sql_config:
         host: 'localhost'
         user: 'root'
         port:  3306
         password: 'nycuml912'
-        database_name: "Innolux_Paper_info"
-        charset: 'utf8mb4'
+        database_name: 'innolux_db'
         table_name: ['Papers_info',Image_Files,"GPT_Cost","news_info"]
 Papers_info:
         id : "INT AUTO_INCREMENT PRIMARY KEY"
@@ -51,8 +51,6 @@ news_info:
         pdf_file_byte: "LONGBLOB"
         Finish_time: "DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
         Status: "INT DEFAULT 0"
-
-
 GPT_Cost:
         id : "INT AUTO_INCREMENT PRIMARY KEY"
         Project_name: "VARCHAR(255)"

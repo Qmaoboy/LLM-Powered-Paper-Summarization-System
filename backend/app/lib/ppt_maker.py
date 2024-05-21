@@ -4,7 +4,7 @@ from pptx.enum.text import PP_ALIGN,MSO_ANCHOR, MSO_AUTO_SIZE
 from pptx.dml.color import RGBColor
 import datetime
 import re,os
-from utilized import *
+from lib.utilized import *
 from PIL import Image
 from io import BytesIO
 
@@ -37,7 +37,7 @@ def make_ppt(Target_Folder,Paper_list,client,args):
 
         ## add Logo
         left,top,width,height= Inches(0.1),Inches(6.5),Inches(1),Inches(1)
-        img_path=r"backend\app\assets\InnoLux_Corporation-Logo.wine.png"
+        img_path=r"lib\assets\InnoLux_Corporation-Logo.wine.png"
         pic = slide.shapes.add_picture(img_path, left,top,width,height)
         return slide
 

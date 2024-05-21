@@ -1,9 +1,9 @@
 import threading as th
-from CLIP import clip
+from lib.CLIP import clip
 import re,torch
 from tqdm import tqdm
-from utilized import *
-from mysql_class import mysql_db_client
+from lib.utilized import *
+from lib.mysql_class import mysql_db_client
 from PIL import Image
 from io import BytesIO
 device = "cuda" if torch.cuda.is_available() else "cpu"

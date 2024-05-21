@@ -1,20 +1,27 @@
 from openai import OpenAI
 import openai,time,os,threading as th,json
-import shared_logger
+import lib.logger as logger
 import datetime
-logger = shared_logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
+os.makedirs('log', exist_ok=True)
+logger = logger.setup_logger(f'log/{datetime.datetime.now().strftime("%Y-%m-%d_%H")}_backend.log')
 
 class openai_GPT:
-    def __init__(self,model="gpt-3.5-turbo-0125"):
+    def __init__(self,model="gpt-3.5-turbo-0125",gpt_key="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"):
         self.model_name=model
-        self.api_key="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"
+        self.api_key=gpt_key
         self.openai_client = OpenAI(
             api_key=self.api_key,)
         self.gpt_lock=th.Lock()
         self.APIValidation=False
         self.complete_tokens=0
         self.prompt_tokens=0
-
+        self.error_message={
+            401:"Invalid Authentication",
+            403:"Country, region, or territory not supported",
+            429:"Rate limit reached for requests",
+            500:"The server had an error while processing your request",
+            503:"The engine is currently overloaded, please try again later",
+        }
         if not self.APIValidation:
             self.Check_apikey()
 
@@ -28,46 +35,46 @@ class openai_GPT:
                     {"role": "user", "content":f"give me a yes if API is working"},
                     ],
                 temperature=0,
-                max_tokens=10,
+                max_tokens=5,
             )
-
-            claim_text=response.choices[0].message.content
-            self.complete_tokens+=response.usage.completion_tokens
-            self.prompt_tokens+=response.usage.prompt_tokens
-            self.APIValidation=True
-        except:
-            logger.debug(f"{th.current_thread().name} check API Key Check Fail, Please Check your API Key")
+            if dict(response).get('choices',None) is not None:
+                self.APIValidation=True
+                # logger.info(f"{th.current_thread().name} API key is valid")
+        except openai.AuthenticationError as e:
+            logger.error(f"{th.current_thread().name} code : {e.status_code}, {self.error_message[e.status_code]}")
             os._exit(0)
 
     def  ChatGPT_reply(self,systemPrompt='',userprompt='',input_text='',temperature=0.5,max_tokens=256,pb=None,lock=None,assistant_content=""):
-
         if input_text:
             for _ in range(1):
                 self.gpt_lock.acquire()
                 self.gpt_lock.release()
                 time.sleep(0.1)
-                # try:
-                response=self.openai_client.chat.completions.create(
-                model=self.model_name,
-                messages= [
-                    {"role": "system", "content":systemPrompt},
-                    {"role": "user", "content":f"{userprompt}\n {input_text}"},
-                    {"role": "assistant", "content": f"{assistant_content}"}
-                    ],
+                try:
+                    response=self.openai_client.chat.completions.create(
+                    model=self.model_name,
+                    messages= [
+                        {"role": "system", "content":systemPrompt},
+                        {"role": "user", "content":f"{userprompt}\n {input_text}"},
+                        {"role": "assistant", "content": f"{assistant_content}"}
+                        ],
 
-                temperature=temperature,
-                max_tokens=max_tokens,
-                response_format={ "type": "json_object" }
-                )
-                self.complete_tokens+=response.usage.completion_tokens
-                self.prompt_tokens+=response.usage.prompt_tokens
-                claim_text=response.choices[0].message.content
-                return claim_text
-                # except:
-                    # self.gpt_lock.acquire()
-                    # time.sleep(2)
-                    # self.gpt_lock.release()
-                    # continue
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    response_format={ "type": "json_object" }
+                    )
+
+                    if dict(response).get('choices',None) is not None:
+                        self.APIValidation=True
+                        self.complete_tokens+=response.usage.completion_tokens
+                        self.prompt_tokens+=response.usage.prompt_tokens
+                        claim_text=response.choices[0].message.content
+                        return claim_text
+                except:
+                    self.gpt_lock.acquire()
+                    time.sleep(2)
+                    self.gpt_lock.release()
+                    continue
         else:
             logger.debug("Text input empty, please check your input text")
             return 1

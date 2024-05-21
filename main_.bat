@@ -1,14 +1,13 @@
 @echo off
 setlocal enabledelayedexpansion
 @REM :init
-set currentpath=%cd%
+set currentpath=%cd%/backend/app
 set "systemdrive=!currentpath:~0,1!"
 set minicondapath=C:\ProgramData\miniconda3
 set User_minicondapath=C:\Users\%UserName%\miniconda3
 set paddle_env_path1=C:\Users\%UserName%\.conda\envs\paddle_env\Scripts
 set paddle_env_path2=C:\Users\%UserName%\miniconda3\envs\paddle_env\Scripts
 set envbuild_bat_file=%cd%\Env_build\Env_build.bat
-set main_prgraom_path=%currentpath%\Patent_project
 
 goto Check_env
 
@@ -30,7 +29,7 @@ else
 if not exist "%paddle_env_path1%\" (
     if not exist "%paddle_env_path2%\" (
     echo paddle_env env check Fail Start to rebuild paddle_env
-    Call %envbuild_bat_file%
+    Call %envbuild_bat_file% 2>nul
     goto :START
 )
 ) else (
@@ -46,7 +45,8 @@ if errorlevel 1 goto patt_switch
 %systemdrive%:
 :continue
 echo paddle_env activate success
-cd %main_prgraom_path%
+cd %currentpath%
+echo %cd%
 echo =========== Main Page ===========
 echo What Task do u wanna do :
 echo 1. GPT_gen
@@ -54,10 +54,10 @@ echo 2. Database Function
 echo 3. End The PROGRAM
 set /p task=
 if "%task%" == "1" (
-python backend\app\lib\Main.py GPT_gen
+python Main.py GPT_gen
 )
 if "%task%" == "2" (
-python backend\app\lib\Main.py sql_Action
+python Main.py sql_Action
 )
 if "%task%" == "3" (
 GOTO :END
