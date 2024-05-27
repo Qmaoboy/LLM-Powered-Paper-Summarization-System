@@ -4,6 +4,8 @@ services:
     image: mysql:5.7
     volumes:
       - db-data:/var/lib/mysql
+      - ./backend/my.cnf:/etc/mysql/conf.d/my.cnf
+    command: --max_allowed_packet=32505856
     restart: always
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
@@ -29,6 +31,13 @@ services:
       DATABASE_USER: innolux
       DATABASE_PASSWORD: 'nycuml912'
       DATABASE_NAME: innolux_db
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 
 volumes:
   db-data:

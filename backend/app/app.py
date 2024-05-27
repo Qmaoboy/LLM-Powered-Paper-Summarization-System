@@ -3,8 +3,14 @@ import os
 import yaml
 import requests
 from lib.mysql_class import mysql_db_client  # Ensure this custom module is correctly implemented
+from lib.gpt_worker import GPT_Analysis_
+from lib.mysql_class import sql_operater
+import glob
+
 
 app = Flask(__name__, template_folder='templates')
+with open('lib/config/config.yaml', 'r') as yamlfile:
+    config = yaml.safe_load(yamlfile)
 
 @app.route('/')
 def index():
@@ -21,14 +27,33 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit():
     function = request.form['function']
-    folder_path = request.form['folder_path']
-    keyword = [request.form['keyword1'],request.form['keyword2']]
     if function == 'summarize':
-        return f"Input Text: {folder_path} {keyword}, Sorry the function is not implemented yet."
-    elif function == 'analyze':
-        return f"Input Text: {folder_path} {keyword}, Sorry the function is not implemented yet."
-    elif function == 'review':
-        return f"Input Text: {folder_path} {keyword}, Sorry the function is not implemented yet."
+        task = request.form['task']
+        if task == 'papers':
+            path = os.getcwd() + "/" + request.form['folder_path']
+            GPT_Analysis_(config, [path])
+            return render_template("Text_page/summarize.html", path = path)
+        elif task == 'news':
+            return render_template("Text_page/test.html")
+    elif function == 'database':
+        task = request.form['db_task']
+        sql = sql_operater(config)
+        if task == 'search':
+            folder_name = request.form['folder_name']
+            keyword = request.form['keyword']
+            sql.Search_by_keyword(folder_name, keyword)
+            return render_template("Text_page/summarize.html")
+        elif task == 'init':
+            initial = request.form.get('initial')
+            if initial == 'on':
+                sql.Iniitalize_Sql_table()
+                return render_template("Text_page/reset.html")
+            else :
+                return 'Please select the checkbox'
+    elif function == 'test':
+        test1 = request.form['test_param1']
+        test2 = request.form['test_param2']
+        return render_template("Text_page/test.html", test1=test1, test2=test2)
     else:
         return 'Invalid function'
 if __name__ == "__main__":

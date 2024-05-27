@@ -9,7 +9,7 @@ MainConfig:
         make_ppt: True
         version: "1.2.0"
 sql_config:
-        host: 'localhost'
+        host: 'db'
         user: 'root'
         port:  3306
         password: 'nycuml912'

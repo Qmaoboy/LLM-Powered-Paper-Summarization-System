@@ -37,11 +37,11 @@ def make_ppt(Target_Folder,Paper_list,client,args):
 
         ## add Logo
         left,top,width,height= Inches(0.1),Inches(6.5),Inches(1),Inches(1)
-        img_path=r"lib\assets\InnoLux_Corporation-Logo.wine.png"
+        img_path=r"lib/assets/InnoLux_Corporation-Logo.wine.png"
         pic = slide.shapes.add_picture(img_path, left,top,width,height)
         return slide
 
-    papertitle=re.sub(r"\s+", "", ppt_path.split('\\')[-2].split(".")[0])
+    papertitle=re.sub(r"\s+", "", ppt_path.split('/')[-2].split(".")[0])
     version_name="3.8"
     key=""
     X=Presentation()
@@ -157,7 +157,7 @@ def make_ppt(Target_Folder,Paper_list,client,args):
                     print(f"{img_name} Not Found in Mysql Image_Files Table")
 
     now_time=datetime.datetime.now().strftime("%Y-%m-%d_%H")
-    target_file=f"{ppt_path}\Innolux_paper_{papertitle}_{now_time}.pptx"
+    target_file=f"{ppt_path}/Innolux_paper_{papertitle}_{now_time}.pptx"
     X.save(target_file)
 
     return target_file

@@ -232,22 +232,22 @@ class sql_operater:
     def __init__(self,config):
         self.config=config
         self.client=mysql_db_client(config)
-        self.get_task()
+        # self.get_task()
 
-    def get_task(self):
-        while True:
-            print("""============= sql page ===============\nSql_table Operation please select actions:\n1. Search by keyword \n2. Init Table\n3. Return
-                  """)
-            action=input("Please select actions: ")
-            if action=="1":
-                self.Search_by_keyword()
-            elif action=="2":
-                make=input("Please type 'init table':")
-                if make=="init table":
-                    self.Iniitalize_Sql_table()
-            elif action=="3":
-                logger.info("Back To Main Page")
-                break
+    # def get_task(self):
+    #     while True:
+    #         print("""============= sql page ===============\nSql_table Operation please select actions:\n1. Search by keyword \n2. Init Table\n3. Return
+    #               """)
+    #         action=input("Please select actions: ")
+    #         if action=="1":
+    #             self.Search_by_keyword()
+    #         elif action=="2":
+    #             make=input("Please type 'init table':")
+    #             if make=="init table":
+    #                 self.Iniitalize_Sql_table()
+    #         elif action=="3":
+    #             logger.info("Back To Main Page")
+    #             break
 
     def Iniitalize_Sql_table(self):
         for i in self.config['sql_config']['table_name']:
@@ -257,15 +257,19 @@ class sql_operater:
 
         self.client.Show_tables()
 
-    def Search_by_keyword(self):
-        Pdf_ppt_path=input("Where to save the ppt file? ")
-        Pdf_ppt_path=os.getcwd() if not os.path.isdir(Pdf_ppt_path) else Pdf_ppt_path
-        keyword=input("What is the keyword? ")
+    def Search_by_keyword(self, folder_name, keyword):
+        # Pdf_ppt_path=input("Where to save the ppt file? ")
+        # Pdf_ppt_path=os.getcwd() if not os.path.isdir(Pdf_ppt_path) else Pdf_ppt_path
+        Pdf_ppt_path = os.getcwd()+ "/" + folder_name + "/keyword_PPT"
+        # keyword=input("What is the keyword? ")
         result=self.client.find_data_by_keyword("Papers_info","keywords",keyword)
         if result:
             logger.info(f"found {len(result)} results")
             Paper_list=[i["Paper_name"] for i in result]
             if os.path.exists(Pdf_ppt_path):
+                make_ppt(Pdf_ppt_path,Paper_list,self.client,self.config)
+            else :
+                os.makedirs(Pdf_ppt_path)
                 make_ppt(Pdf_ppt_path,Paper_list,self.client,self.config)
         else:
             logger.debug(f"{keyword} not found in Mysql Papers_info Table")

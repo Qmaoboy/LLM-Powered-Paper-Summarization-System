@@ -1,0 +1,46 @@
+2024-05-27 04:58:11,361 - lib.logger - INFO - found 1 results
+2024-05-27 05:06:19,403 - lib.logger - INFO - Drop: Papers_info Success
+2024-05-27 05:06:19,425 - lib.logger - INFO - Table Papers_info Initialize Success
+2024-05-27 05:06:19,440 - lib.logger - INFO - Drop: Image_Files Success
+2024-05-27 05:06:19,462 - lib.logger - INFO - Table Image_Files Initialize Success
+2024-05-27 05:06:19,475 - lib.logger - INFO - Drop: GPT_Cost Success
+2024-05-27 05:06:19,499 - lib.logger - INFO - Table GPT_Cost Initialize Success
+2024-05-27 05:06:19,508 - lib.logger - INFO - Drop: news_info Success
+2024-05-27 05:06:19,527 - lib.logger - INFO - Table news_info Initialize Success
+2024-05-27 05:06:19,529 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'GPT_Cost'}
+2024-05-27 05:06:19,529 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Image_Files'}
+2024-05-27 05:06:19,530 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Papers_info'}
+2024-05-27 05:06:19,530 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'news_info'}
+2024-05-27 05:06:40,752 - lib.logger - INFO - The GPU : 0 Total Have :12.00 gb , Used : 1.73 gb , Free : 10.27 gb
+2024-05-27 05:06:41,283 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'GPT_Cost'}
+2024-05-27 05:06:41,283 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Image_Files'}
+2024-05-27 05:06:41,283 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Papers_info'}
+2024-05-27 05:06:41,284 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'news_info'}
+2024-05-27 05:06:41,286 - lib.logger - INFO - /usr/src/app/test Put job : 2, Thread num: 1
+2024-05-27 05:08:07,151 - lib.logger - INFO - Thread-10 Insert to DB: /usr/src/app/test/2305,usage 31950 tokens, Progress: 1\2
+
+2024-05-27 05:09:19,308 - lib.logger - INFO - Thread-10 Insert to DB: /usr/src/app/test/2312,usage 69314 tokens, Progress: 0\2
+
+2024-05-27 05:09:19,309 - lib.logger - INFO - /usr/src/app/test GPT Total Cost 0.06741 US Dollars
+2024-05-27 05:09:19,580 - lib.logger - INFO - PPT in /usr/src/app/test/PPT/Innolux_paper_test_2024-05-27_05.pptx 
+2024-05-27 05:09:19,580 - lib.logger - INFO - ====== END ======
+2024-05-27 05:09:19,580 - lib.logger - INFO - Total time : 158.82754755020142,GPT Cost : 0.06741 US Dollars
+2024-05-27 05:10:22,651 - lib.logger - INFO - found 1 results
+2024-05-27 05:11:40,972 - lib.logger - INFO - The GPU : 0 Total Have :12.00 gb , Used : 1.82 gb , Free : 10.18 gb
+2024-05-27 05:11:41,496 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'GPT_Cost'}
+2024-05-27 05:11:41,496 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Image_Files'}
+2024-05-27 05:11:41,497 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Papers_info'}
+2024-05-27 05:11:41,497 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'news_info'}
+2024-05-27 05:11:41,499 - lib.logger - INFO - /usr/src/app/test Put job : 2, Thread num: 1
+2024-05-27 05:11:41,503 - lib.logger - INFO - Thread-17 Done !!! Exist in DB: /usr/src/app/test/2305,usage 0 tokens, Progress: 1\2
+
+2024-05-27 05:11:41,513 - lib.logger - INFO - Thread-17 Insert to DB: /usr/src/app/test/2305,usage 0 tokens, Progress: 1\2
+
+2024-05-27 05:11:41,518 - lib.logger - INFO - Thread-17 Done !!! Exist in DB: /usr/src/app/test/2312,usage 0 tokens, Progress: 0\2
+
+2024-05-27 05:11:41,528 - lib.logger - INFO - Thread-17 Insert to DB: /usr/src/app/test/2312,usage 0 tokens, Progress: 0\2
+
+2024-05-27 05:11:41,529 - lib.logger - INFO - /usr/src/app/test GPT Total Cost 0.0 US Dollars
+2024-05-27 05:11:41,743 - lib.logger - INFO - PPT in /usr/src/app/test/PPT/Innolux_paper_test_2024-05-27_05.pptx 
+2024-05-27 05:11:41,744 - lib.logger - INFO - ====== END ======
+2024-05-27 05:11:41,744 - lib.logger - INFO - Total time : 0.771613597869873,GPT Cost : 0.0 US Dollars

@@ -1,0 +1,70 @@
+2024-05-27 05:35:10,053 - lib.logger - INFO - The GPU : 0 Total Have :12.00 gb , Used : 1.68 gb , Free : 10.32 gb
+2024-05-27 05:35:10,648 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'GPT_Cost'}
+2024-05-27 05:35:10,649 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Image_Files'}
+2024-05-27 05:35:10,649 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Papers_info'}
+2024-05-27 05:35:10,649 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'news_info'}
+2024-05-27 05:35:10,652 - lib.logger - INFO - /usr/src/app/test2 Put job : 2, Thread num: 1
+2024-05-27 05:35:10,655 - lib.logger - DEBUG - Thread-3 /usr/src/app/test2/2310 Format Wrong 0, Try to regenerate
+
+2024-05-27 05:36:19,612 - lib.logger - INFO - The GPU : 0 Total Have :12.00 gb , Used : 1.67 gb , Free : 10.33 gb
+2024-05-27 05:36:20,181 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'GPT_Cost'}
+2024-05-27 05:36:20,182 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Image_Files'}
+2024-05-27 05:36:20,182 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Papers_info'}
+2024-05-27 05:36:20,183 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'news_info'}
+2024-05-27 05:36:20,185 - lib.logger - INFO - /usr/src/app/test2 Put job : 2, Thread num: 1
+2024-05-27 05:37:52,316 - lib.logger - ERROR - Insert Error: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+2024-05-27 05:37:52,323 - lib.logger - INFO - Thread-4 Insert to DB: /usr/src/app/test2/231005916v4,usage 27718 tokens, Progress: 1\2
+
+2024-05-27 05:38:34,699 - lib.logger - INFO - Thread-4 Insert to DB: /usr/src/app/test2/240205457v1,usage 51037 tokens, Progress: 0\2
+
+2024-05-27 05:38:34,700 - lib.logger - INFO - /usr/src/app/test2 GPT Total Cost 0.05217 US Dollars
+2024-05-27 05:38:34,886 - lib.logger - INFO - PPT in /usr/src/app/test2/PPT/Innolux_paper_test2_2024-05-27_05.pptx 
+2024-05-27 05:38:34,887 - lib.logger - INFO - ====== END ======
+2024-05-27 05:38:34,887 - lib.logger - INFO - Total time : 135.27446150779724,GPT Cost : 0.05217 US Dollars
+2024-05-27 05:41:11,043 - lib.logger - INFO - The GPU : 0 Total Have :12.00 gb , Used : 1.69 gb , Free : 10.31 gb
+2024-05-27 05:41:11,617 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'GPT_Cost'}
+2024-05-27 05:41:11,617 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Image_Files'}
+2024-05-27 05:41:11,617 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Papers_info'}
+2024-05-27 05:41:11,618 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'news_info'}
+2024-05-27 05:41:11,619 - lib.logger - INFO - /usr/src/app/test2 Put job : 2, Thread num: 1
+2024-05-27 05:42:24,178 - lib.logger - ERROR - Insert Error: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+2024-05-27 05:42:24,186 - lib.logger - INFO - Thread-7 Insert to DB: /usr/src/app/test2/231003337v5,usage 20929 tokens, Progress: 1\2
+
+2024-05-27 05:42:24,190 - lib.logger - INFO - Thread-7 Done !!! Exist in DB: /usr/src/app/test2/240205457v1,usage 20929 tokens, Progress: 0\2
+
+2024-05-27 05:42:24,199 - lib.logger - INFO - Thread-7 Insert to DB: /usr/src/app/test2/240205457v1,usage 20929 tokens, Progress: 0\2
+
+2024-05-27 05:42:24,200 - lib.logger - INFO - /usr/src/app/test2 GPT Total Cost 0.02858 US Dollars
+2024-05-27 05:42:24,392 - lib.logger - INFO - PPT in /usr/src/app/test2/PPT/Innolux_paper_test2_2024-05-27_05.pptx 
+2024-05-27 05:42:24,392 - lib.logger - INFO - ====== END ======
+2024-05-27 05:42:24,393 - lib.logger - INFO - Total time : 73.3486659526825,GPT Cost : 0.02858 US Dollars
+2024-05-27 05:44:55,026 - lib.logger - INFO - The GPU : 0 Total Have :12.00 gb , Used : 1.67 gb , Free : 10.33 gb
+2024-05-27 05:44:56,042 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'GPT_Cost'}
+2024-05-27 05:44:56,042 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Image_Files'}
+2024-05-27 05:44:56,043 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Papers_info'}
+2024-05-27 05:44:56,043 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'news_info'}
+2024-05-27 05:44:56,045 - lib.logger - INFO - /usr/src/app/test2 Put job : 2, Thread num: 1
+2024-05-27 05:45:01,191 - lib.logger - ERROR - Insert Error: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+2024-05-27 05:46:01,171 - lib.logger - INFO - Thread-10 Insert to DB: /usr/src/app/test2/211010139v2,usage 24618 tokens, Progress: 1\2
+
+2024-05-27 05:46:01,174 - lib.logger - INFO - Thread-10 Done !!! Exist in DB: /usr/src/app/test2/240205457v1,usage 24618 tokens, Progress: 0\2
+
+2024-05-27 05:46:01,183 - lib.logger - INFO - Thread-10 Insert to DB: /usr/src/app/test2/240205457v1,usage 24618 tokens, Progress: 0\2
+
+2024-05-27 05:46:01,183 - lib.logger - INFO - /usr/src/app/test2 GPT Total Cost 0.03218 US Dollars
+2024-05-27 05:46:01,708 - lib.logger - INFO - PPT in /usr/src/app/test2/PPT/Innolux_paper_test2_2024-05-27_05.pptx 
+2024-05-27 05:46:01,708 - lib.logger - INFO - ====== END ======
+2024-05-27 05:46:01,709 - lib.logger - INFO - Total time : 66.68198108673096,GPT Cost : 0.03218 US Dollars
+2024-05-27 05:46:32,004 - lib.logger - INFO - found 1 results
+2024-05-27 06:18:44,283 - lib.logger - INFO - The GPU : 0 Total Have :12.00 gb , Used : 1.71 gb , Free : 10.29 gb
+2024-05-27 06:18:44,882 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'GPT_Cost'}
+2024-05-27 06:18:44,882 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Image_Files'}
+2024-05-27 06:18:44,883 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'Papers_info'}
+2024-05-27 06:18:44,883 - lib.logger - INFO - Get table name :{'Tables_in_innolux_db': 'news_info'}
+2024-05-27 06:18:44,887 - lib.logger - INFO - /usr/src/app/test2 Put job : 1, Thread num: 1
+2024-05-27 06:21:00,978 - lib.logger - INFO - Thread-4 Insert to DB: /usr/src/app/test2/231005916v4,usage 29896 tokens, Progress: 0\1
+
+2024-05-27 06:21:00,979 - lib.logger - INFO - /usr/src/app/test2 GPT Total Cost 0.0211 US Dollars
+2024-05-27 06:21:01,297 - lib.logger - INFO - PPT in /usr/src/app/test2/PPT/Innolux_paper_test2_2024-05-27_06.pptx 
+2024-05-27 06:21:01,297 - lib.logger - INFO - ====== END ======
+2024-05-27 06:21:01,297 - lib.logger - INFO - Total time : 137.0136215686798,GPT Cost : 0.0211 US Dollars

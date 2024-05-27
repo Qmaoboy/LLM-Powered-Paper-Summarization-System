@@ -40,28 +40,124 @@
         }
     </style>
 </head>
+<script>
+    debugger
+    function showFields() {
+        var functionSelect = document.getElementById("function");
+        var selectedFunction = functionSelect.value; // 获取 select 元素的值
+        var summarizeFields = document.getElementById("summarize-fields");
+        var databaseFields = document.getElementById("database-fields");
+        var testFields = document.getElementById("test-fields");
+        
+        // Hide all fields initially
+        summarizeFields.hidden = true;
+        databaseFields.hidden = true;
+        testFields.hidden = true;
+        
+        // Show fields based on selected function
+        if (selectedFunction === "summarize") {
+            summarizeFields.hidden = false;
+        } else if (selectedFunction === "database") {
+            databaseFields.hidden = false;
+        } else if (selectedFunction === "test") {
+            testFields.hidden = false;
+        }
+    }
+
+    function show_taskFields() {
+        var functionSelect = document.getElementById("task");
+        var selectedFunction = functionSelect.value; // 获取 select 元素的值
+        var papersFields = document.getElementById("papers-fields");
+        var newsFields = document.getElementById("news-fields");
+        
+        // Hide all fields initially
+        papersFields.hidden = true;
+        newsFields.hidden = true;
+        
+        // Show fields based on selected function
+        if (selectedFunction === "papers") {
+            papersFields.hidden = false;
+        } else if (selectedFunction === "news") {
+            newsFields.hidden = false;
+        }
+    }
+
+    function show_database_taskFields() {
+        var functionSelect = document.getElementById("db_task");
+        var selectedFunction = functionSelect.value; // 获取 select 元素的值
+        var searchFields = document.getElementById("search-fields");
+        var initFields = document.getElementById("init-fields");
+        
+        // Hide all fields initially
+        searchFields.hidden = true;
+        initFields.hidden = true;
+        
+        // Show fields based on selected function
+        if (selectedFunction === "search") {
+            searchFields.hidden = false;
+        } else if (selectedFunction === "init") {
+            initFields.hidden = false;
+        }
+    }
+</script>
+
 <body>
-    <div class="container">
-        <h1>Wellcome to MLLAB paper Summery system</h1>
-        <form action="/submit" method="POST">
-            <label for="function">Choose a function:</label>
-            <select id="function" name="function">
-                <option value="summarize">Summarize</option>
-                <option value="analyze">Analyze</option>
-                <option value="review">Review</option>
+<div class="container">
+    <h1>Welcome to Innolux Paper Summary System</h1>
+    <form action="/submit" method="POST">
+        <label for="function">Choose a function:</label>
+        <select id="function" name="function" onchange="showFields()">
+            <option value="summarize">Summarize</option>
+            <option value="database">Database</option>
+            <option value="test">Test</option>
+        </select>
+
+        <div id="summarize-fields" >
+            <label for="task">Choose a task:</label>
+            <select id="task" name="task" onchange="show_taskFields()">
+                <option value="papers">Papers</option>
+                <option value="news">News</option>
             </select>
+            <div id="papers-fields" >
+                <label for="folder_path">Folder name:</label>
+                <input type="text" id="folder_path" name="folder_path" placeholder="Enter the folder name...">
+            </div>
+            <div id="news-fields" hidden>
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" placeholder="Enter the url...">
+                <label for="news_content">News content:</label>
+                <input type="text" id="news_content" name="news_content" placeholder="Enter the news content...">
+            </div>
+        </div>
 
-            <label for="folder_path">Folder Path:</label>
-            <input type="text" id="folder_path" name="folder_path" placeholder="Enter the folder path...">
+        <div id="database-fields" hidden>
+            <label for="db_task">Choose a task:</label>
+            <select id="db_task" name="db_task" onchange="show_database_taskFields()">
+                <option value="search">Search by keywords</option>
+                <option value="init">Reset</option>
+            </select>
+            <div id="search-fields" >
+                <label for="folder_name">Folder name:</label>
+                <input type="text" id="folder_name" name="folder_name" placeholder="Enter the folder name...">
+                <label for="keyword">Keyword:</label>
+                <input type="text" id="keyword" name="keyword" placeholder="Enter the keyword...">
+            </div>
+            <div id="init-fields" hidden>
+                <input type="checkbox" id="initial" name="initial" value="on">
+                <label for="check_init">Sure to reset?</label>
+            </div>
+        </div>
 
-            <label for="keyword1">Keyword 1:</label>
-            <input type="text" id="keyword1" name="keyword1" placeholder="Enter first keyword...">
+        <div id="test-fields" hidden>
+            <!-- Add specific input fields for test function -->
+            <label for="test_param1">Test Parameter 1:</label>
+            <input type="text" id="test_param1" name="test_param1" placeholder="Enter test parameter 1...">
+            <label for="test_param2">Test Parameter 2:</label>
+            <input type="text" id="test_param2" name="test_param2" placeholder="Enter test parameter 2...">
+        </div>
 
-            <label for="keyword2">Keyword 2:</label>
-            <input type="text" id="keyword2" name="keyword2" placeholder="Enter second keyword...">
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
 </body>
 </html>

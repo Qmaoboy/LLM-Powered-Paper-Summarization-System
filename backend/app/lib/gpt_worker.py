@@ -38,6 +38,10 @@ class gpt_Worker(th.Thread):
         self.regen_times=1
         self.reply_dic={}
         self.task="paper"
+        for i in self.args['sql_config']['table_name']:
+            self.client.create_table(i)
+        result = self.client.Show_tables()
+        os.system(f"echo {result}")
 
     def check_struct(self,target_dic,col_name)->list:
         if isinstance(target_dic[col_name],str):
@@ -154,7 +158,7 @@ class gpt_Worker(th.Thread):
                     else:
                         self.Get_openai_GPT(pb,pdf_filename)
                         # print(self.reply_dic['organization_name'])
-
+                    # os.system(f"echo {self.reply_dic}")
                     self.client.insert_data("Papers_info","Paper_name",self.reply_dic)
 
                 self.out_lock.acquire()
@@ -192,7 +196,7 @@ def GPT_Analysis_(config,target_list:list)->None:
         thread=[]
         gpt_total_cost={}
         generate_tokens,prompt_tokens=0,0
-        pub_num=list(map(killblankspace,glob.glob(f"{Target_Folder}\*.pdf")))
+        pub_num=list(map(killblankspace,glob.glob(f"{Target_Folder}/*.pdf")))
         ## Put in queue
         for job in pub_num:
             # in_lock.acquire()

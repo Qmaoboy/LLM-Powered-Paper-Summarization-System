@@ -21,6 +21,7 @@ with open('lib/config/config.yaml', 'r') as yamlfile:
 logger.info(f'Version {config["MainConfig"]["version"]}')
 
 if __name__=="__main__":
+    print("123")
     parser = argparse.ArgumentParser(description='Process tasks.')
     parser.add_argument('task', type=str, choices=['GPT_gen', 'sql_Action', 'End'], help='Task to perform')
     kwargs = parser.parse_args()
