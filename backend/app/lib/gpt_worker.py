@@ -183,6 +183,7 @@ class gpt_Worker(th.Thread):
                     break
 
 def GPT_Analysis_(config,target_list:list)->None:
+
     Empty_GPU_Cache()
     CheckGPU()
     gpt_overall_cost=0
