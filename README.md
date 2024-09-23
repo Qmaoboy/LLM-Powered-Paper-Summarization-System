@@ -20,12 +20,12 @@ D:\WEB_PAPER
 
 ### Docker Build
 - Use Docker compose to build the env
-'''yaml
+```yaml
 Docker compose up
-'''
+```
 
 ## GPT_analysis
-'''
+```
 GPT_Analysis_ is the main function to generate the GPT analysis for the target_list
 Args:
     config (dict): The configuration dictionary
@@ -41,5 +41,5 @@ Steps:
         f. Generate the Image description (BLIP_image_Description.py/Func_blip_)
         e. Save the GPT analysis into the database (mysql_class.py/mysql_db_client.py)
     3. Generate the PPT (ppt_maker.py/make_ppt)
-'''
+```
 
