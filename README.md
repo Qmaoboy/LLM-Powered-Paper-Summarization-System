@@ -1,4 +1,4 @@
-# Web_paper
+# LLM-Powered Paper Summarization System
 For Innolux Paper Summerization Project
 ```
 D:\WEB_PAPER
